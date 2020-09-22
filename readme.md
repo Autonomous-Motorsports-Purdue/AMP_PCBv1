@@ -13,8 +13,7 @@ PCB Documentation
 			
 	- Steering PWM
 		- A square wave is sent to input A of the servo.
-		- Pulse Width determines position of servo
-		- 
+		- The pulse width determines position of servo.
 		
 	- Differential Amplifier 
 		- The formula for a voltage divider is V = (R3/R1)(V1 - V2).
@@ -25,3 +24,4 @@ PCB Documentation
 	- Braking Linear Actuator
 		- 5 Amp Max Current Draw at 12 Volts
 		- Duty Cycle: 5 minutes on, 15 minutes off
+		- Speed of 1.38 in/s with load of 35 lbs
