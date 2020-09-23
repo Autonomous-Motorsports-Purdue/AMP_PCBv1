@@ -1,0 +1,172 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GTB5:7555 U1
+U 1 1 5F56E10D
+P 5800 3500
+F 0 "U1" H 5750 3500 50  0000 L CNN
+F 1 "7555" H 5700 3600 50  0000 L CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 5800 3500 50  0001 C CNN
+F 3 "" H 5800 3500 50  0001 C CNN
+	1    5800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F56FD10
+P 4900 3000
+F 0 "R1" H 4970 3046 50  0000 L CNN
+F 1 "1K" H 4970 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 3000 50  0001 C CNN
+F 3 "~" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F5709CB
+P 4900 3450
+F 0 "R2" H 4970 3496 50  0000 L CNN
+F 1 "470K" H 4970 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 3450 50  0001 C CNN
+F 3 "~" H 4900 3450 50  0001 C CNN
+	1    4900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F570CF9
+P 6700 3750
+F 0 "R3" H 6770 3796 50  0000 L CNN
+F 1 "1K" H 6770 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6630 3750 50  0001 C CNN
+F 3 "~" H 6700 3750 50  0001 C CNN
+	1    6700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F571065
+P 4900 4100
+F 0 "C1" H 5015 4146 50  0000 L CNN
+F 1 "1U" H 5015 4055 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4938 3950 50  0001 C CNN
+F 3 "~" H 4900 4100 50  0001 C CNN
+	1    4900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F571A30
+P 6700 4200
+F 0 "D1" V 6739 4082 50  0000 R CNN
+F 1 "LED" V 6648 4082 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6700 4200 50  0001 C CNN
+F 3 "~" H 6700 4200 50  0001 C CNN
+	1    6700 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F572849
+P 4150 3550
+F 0 "BT1" H 4268 3646 50  0000 L CNN
+F 1 "CR2032" H 4268 3555 50  0000 L CNN
+F 2 "Tutorial:S8211-46R" V 4150 3610 50  0001 C CNN
+F 3 "~" V 4150 3610 50  0001 C CNN
+	1    4150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F573475
+P 5750 4600
+F 0 "#PWR0101" H 5750 4350 50  0001 C CNN
+F 1 "GND" H 5755 4427 50  0000 C CNN
+F 2 "" H 5750 4600 50  0001 C CNN
+F 3 "" H 5750 4600 50  0001 C CNN
+	1    5750 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5150 4000
+Wire Wire Line
+	4150 3350 4150 2700
+Wire Wire Line
+	4150 2700 4900 2700
+Wire Wire Line
+	5650 2700 5650 3000
+Wire Wire Line
+	5650 2700 6000 2700
+Wire Wire Line
+	6000 2700 6000 3000
+Connection ~ 5650 2700
+Wire Wire Line
+	4900 2700 4900 2850
+Wire Wire Line
+	5750 4450 5750 4550
+Wire Wire Line
+	4900 3150 4900 3250
+Wire Wire Line
+	4900 3600 4900 3750
+Wire Wire Line
+	4900 4250 4900 4450
+Connection ~ 4900 2700
+Wire Wire Line
+	4900 4450 4150 4450
+Wire Wire Line
+	4150 4450 4150 3650
+Connection ~ 4900 4450
+Wire Wire Line
+	6250 3500 6700 3500
+Wire Wire Line
+	6700 3500 6700 3600
+Wire Wire Line
+	6700 4550 5750 4550
+Wire Wire Line
+	6700 3900 6700 4050
+Wire Wire Line
+	6700 4350 6700 4550
+Connection ~ 5750 4550
+Wire Wire Line
+	5750 4550 5750 4600
+Wire Wire Line
+	5750 4450 5750 4000
+Connection ~ 5750 4450
+Wire Wire Line
+	4900 3250 5350 3250
+Wire Wire Line
+	5350 3250 5350 3400
+Connection ~ 4900 3250
+Wire Wire Line
+	4900 3250 4900 3300
+Wire Wire Line
+	4900 3750 5200 3750
+Connection ~ 4900 3750
+Wire Wire Line
+	4900 3750 4900 3950
+Wire Wire Line
+	5350 3550 5200 3550
+Wire Wire Line
+	5200 3550 5200 3750
+Connection ~ 5200 3750
+Wire Wire Line
+	5200 3750 5350 3750
+NoConn ~ 5950 4000
+Wire Wire Line
+	4900 4450 5750 4450
+Wire Wire Line
+	4900 2700 5650 2700
+$EndSCHEMATC
