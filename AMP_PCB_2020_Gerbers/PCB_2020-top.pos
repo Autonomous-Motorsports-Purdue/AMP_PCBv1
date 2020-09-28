@@ -1,0 +1,19 @@
+### Module positions - created on 9/28/2020 9:00:34 AM ###
+### Printed by Pcbnew version kicad (5.1.4)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val           Package                                           PosX       PosY       Rot  Side
+C1        0.1uF         C_0805_2012Metric_Pad1.15x1.40mm_HandSolder    83.0000    51.5250  270.0000  top
+C2        0.1uF         C_0805_2012Metric_Pad1.15x1.40mm_HandSolder   101.7500    24.7500  180.0000  top
+C5        0.1uF         C_0805_2012Metric_Pad1.15x1.40mm_HandSolder    63.7500    50.7500  270.0000  top
+H1        MountingHole  MountingHole_2.7mm                             98.5000     4.0000    0.0000  top
+H2        MountingHole  MountingHole_2.7mm                              4.5000     4.0000    0.0000  top
+H3        MountingHole  MountingHole_2.7mm                             98.5000    81.0000    0.0000  top
+H4        MountingHole  MountingHole_2.7mm                              4.5000    81.0000    0.0000  top
+R1        10k           R_0805_2012Metric_Pad1.15x1.40mm_HandSolder   105.2500    16.2500  270.0000  top
+R2        10k           R_0805_2012Metric_Pad1.15x1.40mm_HandSolder    91.5000    33.5000    0.0000  top
+R3        3k            R_0805_2012Metric_Pad1.15x1.40mm_HandSolder    80.2500    49.2500  270.0000  top
+R4        6.8k          R_0805_2012Metric_Pad1.15x1.40mm_HandSolder    80.2500    53.7500   90.0000  top
+R5        560           R_0805_2012Metric_Pad1.15x1.40mm_HandSolder    91.5000    42.0000    0.0000  top
+R18       560           R_0805_2012Metric_Pad1.15x1.40mm_HandSolder    91.5000    37.7500    0.0000  top
+## End
