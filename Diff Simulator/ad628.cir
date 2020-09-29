@@ -1,0 +1,290 @@
+* AD628 SPICE Macro-model
+* Description: Amplifier
+* Generic Desc: High CM Voltage Programmable Gain Diff Amp
+* Developed by: Scott Hunt
+* 
+* Revision History:
+* 1.0(12/2013) - SH
+* 
+* Refer to http://www.analog.com/Analog_Root/static/techSupport/designTools/spiceModels/license/spice_general.html for License Statement. Use of this model
+* indicates your acceptance of the terms and provisions in the License Statement.
+*
+*
+* BEGIN Notes:
+*
+* Not Modeled:
+*   Temperature effects
+*
+* Parameters modeled include:
+*   Vos
+*   Gain error
+*   Noise
+*   CMRR
+*   PSRR
+*   Output range
+*   Input range 
+*   Supply current
+*   Slew rate
+*   Gain/phase
+*   Bandwidth
+*   Output current limit
+*   Output current reflected in supplies
+*
+* Supply range:
+*    Single Supply: 4.5V to 36V
+*    Dual Supplies: +/-2.25V to +/-18V
+*
+* Max CMV is the least of 120V or 11*(+VS - 1.2V) - 10*VREF
+* Min CMV is the greater of -120V or 11*(-VS + 1.2V) - 10*VREF
+*
+* Typical Specifications used in Model
+*
+* END Notes
+*
+* Node Assignments
+*              Non-inverting input
+*               |   Negative supply
+*               |    |   Reference voltage input
+*               |    |    |     Filter Cap Connection
+*               |    |    |      |    Amplifier output
+*               |    |    |      |     |   Output amplifier inverting input
+*               |    |    |      |     |   |    Positive supply
+*               |    |    |      |     |   |    |    Inverting input
+*               |    |    |      |     |   |    |    |
+.subckt AD628  +IN  -VS  VREF  CFILT  OUT  RG  +VS  -IN
+
+****Gain = 0.1 Difference Amplifier Stage
+
+***Resistors
+R62 -IN 2 RNoise 100e3
+R63 +IN 1 RNoise 100e3
+R65 2 4 RNoise 9.999e3
+R61 1 VREF RNoise 9.999e3
+
+***A1 Differential Stage
+Q1 13 12 14 0 npn
+Q2 17 2 16 0 npn
+RC1 98 13 Rideal 3.6E+03
+RC2 98 17 Rideal 3.6E+03
+RE1 15 14 Rideal 3.548E+03
+RE2 16 15 Rideal 3.548E+03
+Dcmlim1 18 15 DQuiet
+Vcmlim1 18 51 1.226
+Ibias 15 51 1.00E-03
+Ios 1 2 0
+Vos 1 7 1E-04
+Cinv 2 0 1E-22
+Cninv 1 0 1E-22
+
+***A1 Noise
+VVnoise 501 0 0
+RVNoise 501 0 RNoise 4E-05
+DVNoise 511 0 DVNoise
+VDNoise 511 501 0.1
+HVnoise 9 7 Vvnoise 1
+VInoise1 502 0 0
+RINoise1 502 0 RNoise 1656000
+DINoise1 502 0 DINoise1
+FINoise1 12 0 VINoise1 1
+VInoise2 503 0 0
+RINoise2 503 0 RNoise 1656000
+DINoise2 503 0 DINoise2
+FINoise2 2 0 VINoise2 1
+
+***A1 Common Mode Rejection
+Rcm1 +IN 601 RIdeal 100E+06
+Rcm2 601 -IN RIdeal 100E+06
+Gcmr 0 602 601 0 1.00E-07
+Rcmr1 602 603 RIdeal 1E+07
+Rcmr2 603 604 RIdeal 31.62
+Lcmr 604 0 5.033E-03
+Ecmr 10 9 603 0 1.0E+00
+
+***A1 Power Supply Rejection
+Epsr1 700 0 98 0 1
+Rpsr1 700 701 RIdeal 1.00E+03
+Rpsr2 701 702 RIdeal 1E-03
+Lpsr1 702 0 7.958E-07
+Epsr2 11 10 701 0 1
+Epsr3 703 0 51 0 1
+Rpsr3 703 704 RIdeal 1.00E+03
+Rpsr4 704 705 RIdeal 1E-03
+Lpsr2 705 0 3.184e-04
+Epsr4 12 11 704 0 1
+
+***A1 First Gain and Slew Rate
+GSlew 0 101 17 13 1.00E+00
+RSlew 101 0 RIdeal 2.5e+02
+DSlew1 101 102 Dzener
+DSlew2 0 102 Dzener
+
+***A1 Second Gain with Dominant Pole and Output Voltage Limiting
+Gp1 51 201 101 0 3.770E-08
+Rp1 201 51 RIdeal 1.061E+13
+Cp1 201 51 1.50e-12
+Vlim1 97 206 1.55
+Dlim1 201 206 DQuiet
+Vlim2 207 52 1.45
+Dlim2 207 201 DQuiet
+Esupref1 97 98 51 0 1
+Esupref2 52 51 51 0 1
+
+***A1 Additional Poles
+Gp2 0 202 201 51 1.00e-03
+Rp2 202 0 RIdeal 1.00e+03
+Cp2 202 0 5.30517e-11
+Gp3 0 203 202 0 1.00e-03
+Rp3 203 0 RIdeal 1.00e+03
+Cp3 203 0 3E-11
+Gp4 0 204 203 0 1.00e-03
+Rp4 204 0 RIdeal 1.00e+03
+Cp4 204 0 1.59155e-16
+Gp5 0 205 204 0 1.00e-03
+Rp5 205 0 RIdeal 1.00e+03
+Cp5 205 0 1.592e-16
+
+***A1 Zeros
+Gz1 0 301 205 0 1.00e-03
+Rz1 301 302 RIdeal 1.00e+03
+Lz1 302 0 1.592E-10
+Gz2 0 303 301 0 1.00e-03
+Rz2 303 304 RIdeal 1.00e+03
+Lz2 304 0 1.592e-10
+Gz3 0 305 303 0 1.00e-03
+Rz3 305 306 RIdeal 1.00e+03
+Lz3 306 0 1.592e-10
+
+***A1 Output with Current Limiting
+Gbuf 0 401 305 0 1.00e-04
+Rbuf 401 0 RIdeal 1.00e+04
+Eout 404 0 401 0 1.0E+00
+Rout 405 404 RIdeal 2E-01
+Lout 406 405 1.0e-19
+Cout 406 0 1E-22
+Voutmon 406 4 0
+Dout1 401 407 DQuiet
+Vout1 407 406 -6.27E-01
+Dout2 408 401 DQuiet
+Vout2 406 408 -6.27E-01
+R6 4 CFILT RIdeal 10e3
+
+***Reference Supply Generator
+Eref1 98 0 +VS 0 1
+Eref2 51 0 -VS 0 1
+
+***Total Supply Current
+Iq +VS -VS .0016
+Fsup1 803 0 Voutmon 1
+Dsup1 +VS 802 DQuiet
+DZsup1 803 802 Dzener2
+Dsup2 804 -VS DQuiet
+DZsup2 804 803 Dzener2
+Fsup2 823 0 Voutmon1 1
+Dsup3 +VS 822 DQuiet
+DZsup3 823 822 Dzener2
+Dsup4 824 -VS DQuiet
+DZsup4 824 823 Dzener2
+
+****A2 Op Amp (All unique nets are +20)
+
+***A2 Differential Stage
+Q3 33 32 34 0 npn
+Q4 37 RG 36 0 npn
+RC3 98 37 Rideal 3.6E+03
+RC4 98 33 Rideal 3.6E+03
+RE3 35 34 Rideal 3.548E+03
+RE4 36 35 Rideal 3.548E+03
+Dcmlim4 38 35 DQuiet
+Vcmlim4 38 51 1.226
+Ibias1 35 51 1.00E-03
+Ios1 CFILT RG 0
+Vos1 CFILT 27 1E-04
+Cinv1 RG 0 1E-22
+Cninv1 CFILT 0 1E-22
+
+***A2 Noise
+VVnoise1 521 0 0
+RVNoise1 521 0 2.2716E-04
+DVNoise1 521 0 DVNoise
+HVnoise1 29 27 Vvnoise1 1
+VInoise3 522 0 0
+RINoise3 522 0 1656000
+DINoise3 522 0 DINoise1
+FINoise3 32 0 VINoise3 1
+VInoise4 523 0 0
+RINoise4 523 0 1656000
+DINoise4 523 0 DINoise2
+FINoise4 RG 0 VINoise4 1
+
+***A2 Common Mode Rejection
+Rcm3 CFILT 621 RIdeal 100E+06
+Rcm4 621 RG RIdeal 100E+06
+Gcmr1 0 622 621 0 1.00E-06
+Rcmr3 622 623 RIdeal 1E+06
+Rcmr4 623 624 RIdeal 31.62
+Lcmr1 624 0 5.033E-03
+Ecmr1 30 29 623 0 1.0E+00
+
+***A2 Power Supply Rejection
+Epsr5 31 30 701 0 0.1
+Epsr7 32 31 704 0 0.1
+
+***A2 First Gain and Slew Rate
+GSlew1 0 121 37 33 1.00E+00
+RSlew1 121 0 RIdeal 2.5e+02
+DSlew3 121 122 Dzener
+DSlew4 0 122 Dzener
+
+***A2 Second Gain with Dominant Pole and Output Voltage Limiting
+Gp6 51 221 121 0 3.770E-08
+Rp6 221 51 RIdeal 1.061E+13
+Cp6 221 51 1.50e-12
+Vlim3 227 52 1.45
+Dlim3 227 221 DQuiet
+Vlim4 97 226 1.55
+Dlim4 221 226 DQuiet
+
+***A2 Additional Poles
+Gp7 0 222 221 51 1.00e-03
+Rp7 222 0 RIdeal 1.00e+03
+Cp7 222 0 5.30517e-11
+Gp8 0 223 222 0 1.00e-03
+Rp8 223 0 RIdeal 1.00e+03
+Cp8 223 0 3E-11
+
+***A2 Zeros
+Gz4 0 321 223 0 1.00e-03
+Rz4 321 322 RIdeal 1.00e+03
+Lz4 322 0 1.592E-10
+Gz5 0 323 321 0 1.00e-03
+Rz5 323 324 RIdeal 1.00e+03
+Lz5 324 0 1.592e-10
+Gz6 0 325 323 0 1.00e-03
+Rz6 325 326 RIdeal 1.00e+03
+Lz6 326 0 1.592e-10
+
+***A2 Output with Current Limiting
+Gbuf1 0 421 325 0 1.00e-04
+Rbuf1 421 0 RIdeal 1.00e+04
+Eout1 424 0 421 0 1.0E+00
+Rout1 425 424 RIdeal 2E-01
+Lout1 426 425 1.0e-19
+Cout1 426 0 1E-22
+Voutmon1 426 OUT 0
+Dout3 428 421 DQuiet
+Vout3 427 426 -6.27E-01
+Dout4 421 427 DQuiet
+Vout4 426 428 -6.27E-01
+
+*Models Used
+.model Rideal   Res(T_ABS=-273)
+.model Rnoise   Res(T_ABS=27)
+.model npn      npn(BF=499999)
+.model DQuiet   D(IS=1E-18)
+.model DZener   D(BV=11.337)
+.model DZener2  D(BV=50)
+.model DVNoise  D(IS=1E-15 KF=0.05)
+.model DINoise1 D(KF=0.0001)
+.model DINoise2 D(KF=0.0001)
+
+.ends AD628
