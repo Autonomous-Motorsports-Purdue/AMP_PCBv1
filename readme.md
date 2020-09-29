@@ -29,3 +29,6 @@ PCB Documentation
 		- 5 Amp Max Current Draw at 12 Volts
 		- Duty Cycle: 5 minutes on, 15 minutes off
 		- Speed of 1.38 in/s with load of 35 lbs
+		
+	
+		- 
