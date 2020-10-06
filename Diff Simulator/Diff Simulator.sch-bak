@@ -13,37 +13,29 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4950 3600 4950 3550
 $Comp
 L power:GND #PWR0105
 U 1 1 5F715225
-P 4900 2650
-F 0 "#PWR0105" H 4900 2400 50  0001 C CNN
-F 1 "GND" H 4905 2477 50  0000 C CNN
-F 2 "" H 4900 2650 50  0001 C CNN
-F 3 "" H 4900 2650 50  0001 C CNN
-	1    4900 2650
-	-1   0    0    1   
+P 4700 4350
+F 0 "#PWR0105" H 4700 4100 50  0001 C CNN
+F 1 "GND" H 4705 4177 50  0000 C CNN
+F 2 "" H 4700 4350 50  0001 C CNN
+F 3 "" H 4700 4350 50  0001 C CNN
+F 4 "I" H 4700 4350 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0" H 4700 4350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4700 4350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4700 4350
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 3450 5700 3450
-Wire Wire Line
-	4850 3600 4850 4200
-Wire Wire Line
-	4850 3600 4950 3600
-Connection ~ 5700 3450
-Wire Wire Line
-	5700 3450 5950 3450
 $Comp
 L Device:R R3
 U 1 1 5F716D8C
-P 5150 4200
-F 0 "R3" V 4943 4200 50  0000 C CNN
-F 1 "5400" V 5034 4200 50  0000 C CNN
-F 2 "" V 5080 4200 50  0001 C CNN
-F 3 "~" H 5150 4200 50  0001 C CNN
-	1    5150 4200
+P 5100 2750
+F 0 "R3" V 4893 2750 50  0000 C CNN
+F 1 "5400" V 4984 2750 50  0000 C CNN
+F 2 "" V 5030 2750 50  0001 C CNN
+F 3 "~" H 5100 2750 50  0001 C CNN
+	1    5100 2750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -71,36 +63,20 @@ $EndComp
 $Comp
 L Device:R R4
 U 1 1 5F717E7F
-P 4900 2850
-F 0 "R4" H 4970 2896 50  0000 L CNN
-F 1 "5400" H 4970 2805 50  0000 L CNN
-F 2 "" V 4830 2850 50  0001 C CNN
-F 3 "~" H 4900 2850 50  0001 C CNN
-	1    4900 2850
+P 4700 4150
+F 0 "R4" H 4770 4196 50  0000 L CNN
+F 1 "5400" H 4770 4105 50  0000 L CNN
+F 2 "" V 4630 4150 50  0001 C CNN
+F 3 "~" H 4700 4150 50  0001 C CNN
+	1    4700 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4100 3600 4350 3600
 Wire Wire Line
-	4650 3600 4850 3600
-Connection ~ 4850 3600
-Wire Wire Line
-	4900 3100 4900 3000
-Wire Wire Line
 	4700 3100 4900 3100
 Wire Wire Line
-	4900 2700 4900 2650
-Wire Wire Line
-	4900 3100 4900 3350
-Wire Wire Line
 	4900 3350 4950 3350
-Connection ~ 4900 3100
-Wire Wire Line
-	4850 4200 5000 4200
-Wire Wire Line
-	5700 3450 5700 4200
-Wire Wire Line
-	5300 4200 5700 4200
 Wire Wire Line
 	4400 3100 4100 3100
 Text GLabel 4100 3100 0    50   Input ~ 0
@@ -161,11 +137,11 @@ L pspice:VSOURCE V1
 U 1 1 5F728EEC
 P 3700 1600
 F 0 "V1" H 3928 1646 50  0000 L CNN
-F 1 "0.55" H 3928 1555 50  0000 L CNN
+F 1 "2.75" H 3928 1555 50  0000 L CNN
 F 2 "" H 3700 1600 50  0001 C CNN
 F 3 "~" H 3700 1600 50  0001 C CNN
 F 4 "V" H 3700 1600 50  0001 C CNN "Spice_Primitive"
-F 5 "dc 550m" H 3700 1600 50  0001 C CNN "Spice_Model"
+F 5 "dc 2.75" H 3700 1600 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 3700 1600 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    3700 1600
 	1    0    0    -1  
@@ -236,20 +212,45 @@ F 3 "" H 1000 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:OP77 U1
-U 1 1 5F7CFB7B
+L Amplifier_Operational:OP1177AR U1
+U 1 1 5F7D25D1
 P 5250 3450
 F 0 "U1" H 5594 3496 50  0000 L CNN
-F 1 "OP77" H 5594 3405 50  0000 L CNN
-F 2 "" H 5300 3500 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP77.pdf" H 5300 3600 50  0001 C CNN
+F 1 "OP1177AR" H 5594 3405 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5250 3150 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP1177_2177_4177.pdf" H 5250 3450 50  0001 C CNN
 F 4 "X" H 5250 3450 50  0001 C CNN "Spice_Primitive"
-F 5 "OP-77" H 5250 3450 50  0001 C CNN "Spice_Model"
+F 5 "OP1177" H 5250 3450 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 5250 3450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "op77.lib" H 5250 3450 50  0001 C CNN "Spice_Lib_File"
+F 7 "op1177.cir" H 5250 3450 50  0001 C CNN "Spice_Lib_File"
 	1    5250 3450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5350 3750
-NoConn ~ 5250 3750
+Wire Wire Line
+	5550 3450 5750 3450
+Wire Wire Line
+	4900 3350 4900 3100
+Wire Wire Line
+	4900 3100 4900 2750
+Wire Wire Line
+	4900 2750 4950 2750
+Connection ~ 4900 3100
+Wire Wire Line
+	5250 2750 5750 2750
+Wire Wire Line
+	5750 2750 5750 3450
+Connection ~ 5750 3450
+Wire Wire Line
+	5750 3450 5950 3450
+Wire Wire Line
+	4700 4300 4700 4350
+Wire Wire Line
+	4650 3600 4700 3600
+Wire Wire Line
+	4950 3600 4950 3550
+Wire Wire Line
+	4700 3600 4700 4000
+Connection ~ 4700 3600
+Wire Wire Line
+	4700 3600 4950 3600
 $EndSCHEMATC
