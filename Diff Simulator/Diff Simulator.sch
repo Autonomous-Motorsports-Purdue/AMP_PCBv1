@@ -40,7 +40,7 @@ L Device:R R3
 U 1 1 5F716D8C
 P 5150 4200
 F 0 "R3" V 4943 4200 50  0000 C CNN
-F 1 "1000" V 5034 4200 50  0000 C CNN
+F 1 "5400" V 5034 4200 50  0000 C CNN
 F 2 "" V 5080 4200 50  0001 C CNN
 F 3 "~" H 5150 4200 50  0001 C CNN
 	1    5150 4200
@@ -73,7 +73,7 @@ L Device:R R4
 U 1 1 5F717E7F
 P 4900 2850
 F 0 "R4" H 4970 2896 50  0000 L CNN
-F 1 "1000" H 4970 2805 50  0000 L CNN
+F 1 "5400" H 4970 2805 50  0000 L CNN
 F 2 "" V 4830 2850 50  0001 C CNN
 F 3 "~" H 4900 2850 50  0001 C CNN
 	1    4900 2850
@@ -114,9 +114,12 @@ L pspice:VSOURCE V3
 U 1 1 5F726361
 P 1850 1600
 F 0 "V3" H 2078 1646 50  0000 L CNN
-F 1 "5" H 2078 1555 50  0000 L CNN
+F 1 "13" H 2078 1555 50  0000 L CNN
 F 2 "" H 1850 1600 50  0001 C CNN
 F 3 "~" H 1850 1600 50  0001 C CNN
+F 4 "V" H 1850 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 13" H 1850 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1850 1600 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1850 1600
 	1    0    0    -1  
 $EndComp
@@ -147,6 +150,9 @@ F 0 "V2" H 2928 1646 50  0000 L CNN
 F 1 "0.55" H 2928 1555 50  0000 L CNN
 F 2 "" H 2700 1600 50  0001 C CNN
 F 3 "~" H 2700 1600 50  0001 C CNN
+F 4 "V" H 2700 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 550m" H 2700 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2700 1600 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    2700 1600
 	1    0    0    -1  
 $EndComp
@@ -158,6 +164,9 @@ F 0 "V1" H 3928 1646 50  0000 L CNN
 F 1 "0.55" H 3928 1555 50  0000 L CNN
 F 2 "" H 3700 1600 50  0001 C CNN
 F 3 "~" H 3700 1600 50  0001 C CNN
+F 4 "V" H 3700 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 550m" H 3700 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3700 1600 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    3700 1600
 	1    0    0    -1  
 $EndComp
@@ -204,9 +213,12 @@ L pspice:VSOURCE V4
 U 1 1 5F72E756
 P 1000 1650
 F 0 "V4" H 1228 1696 50  0000 L CNN
-F 1 "-5" H 1228 1605 50  0000 L CNN
+F 1 "-13" H 1228 1605 50  0000 L CNN
 F 2 "" H 1000 1650 50  0001 C CNN
 F 3 "~" H 1000 1650 50  0001 C CNN
+F 4 "V" H 1000 1650 50  0001 C CNN "Spice_Primitive"
+F 5 "dc -13" H 1000 1650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1000 1650 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    1000 1650
 	1    0    0    -1  
 $EndComp
@@ -224,18 +236,21 @@ F 3 "" H 1000 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Difference:AD8276 U?
-U 1 1 5F731E77
+L Amplifier_Operational:OP77 U1
+U 1 1 5F7CFB7B
 P 5250 3450
-F 0 "U?" H 5594 3496 50  0000 L CNN
-F 1 "AD8276" H 5594 3405 50  0000 L CNN
-F 2 "" H 5250 3450 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8276_8277.pdf" H 5250 3450 50  0001 C CNN
+F 0 "U1" H 5594 3496 50  0000 L CNN
+F 1 "OP77" H 5594 3405 50  0000 L CNN
+F 2 "" H 5300 3500 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP77.pdf" H 5300 3600 50  0001 C CNN
 F 4 "X" H 5250 3450 50  0001 C CNN "Spice_Primitive"
-F 5 "AD8276" H 5250 3450 50  0001 C CNN "Spice_Model"
+F 5 "OP77E" H 5250 3450 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 5250 3450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "ad8276.cir" H 5250 3450 50  0001 C CNN "Spice_Lib_File"
+F 7 "5 4 3 2 1" H 5250 3450 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "op77e.cir" H 5250 3450 50  0001 C CNN "Spice_Lib_File"
 	1    5250 3450
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5350 3750
+NoConn ~ 5250 3750
 $EndSCHEMATC
