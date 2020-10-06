@@ -20,8 +20,8 @@ PCB Documentation
 		
 	- Differential Amplifier 
 		- 
-		- The formula for a voltage divider is V = (R3/R1)(V1 - V2).
-		- The circuit amplifies the difference between the two inputs.
+		- The formula for a voltage divider is V = VR + (R3/R1)(V1 - V2).
+		- The circuit amplifies the difference between the two inputs and adds the voltage VR as an offset.
 		- Amplifier for PCB needs to change 0.55 V to 0 V, and  2.75 to 12 volts.
 		- Diagram for Reference: https://www.electronicshub.org/wp-content/uploads/2015/01/1.-Differential-amplifier-circuit.jpg
 		
