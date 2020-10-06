@@ -23,6 +23,9 @@ F 0 "#PWR0105" H 4900 2400 50  0001 C CNN
 F 1 "GND" H 4905 2477 50  0000 C CNN
 F 2 "" H 4900 2650 50  0001 C CNN
 F 3 "" H 4900 2650 50  0001 C CNN
+F 4 "I" H 4900 2650 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0" H 4900 2650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4900 2650 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    4900 2650
 	-1   0    0    1   
 $EndComp
@@ -244,10 +247,9 @@ F 1 "OP77" H 5594 3405 50  0000 L CNN
 F 2 "" H 5300 3500 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP77.pdf" H 5300 3600 50  0001 C CNN
 F 4 "X" H 5250 3450 50  0001 C CNN "Spice_Primitive"
-F 5 "OP77E" H 5250 3450 50  0001 C CNN "Spice_Model"
+F 5 "OP-77" H 5250 3450 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 5250 3450 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "5 4 3 2 1" H 5250 3450 50  0001 C CNN "Spice_Node_Sequence"
-F 8 "op77e.cir" H 5250 3450 50  0001 C CNN "Spice_Lib_File"
+F 7 "op77.lib" H 5250 3450 50  0001 C CNN "Spice_Lib_File"
 	1    5250 3450
 	1    0    0    -1  
 $EndComp
