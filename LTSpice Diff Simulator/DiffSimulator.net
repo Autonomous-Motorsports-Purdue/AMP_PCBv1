@@ -1,0 +1,14 @@
+* C:\Users\Johnb\OneDrive\Documents\GitHub\AMP_PCBv1\LTSpice Diff Simulator\DiffSimulator.asc
+V1 P001 0 0.55
+V2 P002 0 2.75
+R1 N001 P001 1000
+R2 N004 P002 1000
+R3 N002 N001 5500
+R4 N004 0 5500
+V3 N005 0 -13
+V4 N003 0 13
+XU2 N004 N001 N003 N005 N002 OP77
+.op
+.lib ADI.lib
+.backanno
+.end

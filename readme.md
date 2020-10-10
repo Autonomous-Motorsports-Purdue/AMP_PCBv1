@@ -13,6 +13,7 @@ PCB Documentation
 		- Recommend switching from DRV8871 to using DRV8874.
 		- DRV8874 has peak current capabilities of 6 A, which is enough for the braking actuator.
 		- Has 16 pins instead of 8 like the DRV8871.
+		- https://www.ti.com/lit/ds/symlink/drv8874.pdf?ts=1602027363204&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDRV8874
 			
 	- Steering PWM
 		- A square wave is sent to input A of the servo.
