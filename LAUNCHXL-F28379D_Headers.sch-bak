@@ -14,8 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 8750 3500 2    39   BiDi ~ 0
-SCIB_RX
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5E1FD379
@@ -58,111 +56,6 @@ F 1 "MountingHole" H 1250 3055 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm" H 1150 3100 50  0001 C CNN
 F 3 "https://www.adafruit.com/product/3299" H 1150 3100 50  0001 C CNN
 	1    1150 3100
-	1    0    0    -1  
-$EndComp
-Text GLabel 8750 3400 2    39   BiDi ~ 0
-SCIB_TX
-Text GLabel 8750 3100 2    39   Output ~ 0
-Brake_PWM_1
-Text GLabel 8750 3200 2    39   Output ~ 0
-Brake_PWM_2
-Wire Wire Line
-	8150 4100 8150 3950
-Wire Wire Line
-	6950 4100 6950 3950
-Wire Wire Line
-	8450 4100 8450 3950
-Text GLabel 8750 3300 2    39   BiDi ~ 0
-STEERING
-Text GLabel 8150 4100 3    39   Output ~ 0
-EN+_CTL
-Text GLabel 7850 4100 3    39   Input ~ 0
-INPUT_A+_CTL
-Text GLabel 7550 4100 3    39   BiDi ~ 0
-FS1_CTL
-Text GLabel 7250 4100 3    39   BiDi ~ 0
-FWD_CTL
-Text GLabel 8450 4100 3    39   BiDi ~ 0
-REV_CTL
-Wire Wire Line
-	7850 3950 7850 4100
-Wire Wire Line
-	7550 3950 7550 4100
-Wire Wire Line
-	7250 3950 7250 4100
-Text GLabel 6450 3300 0    39   Output ~ 0
-THROTTLE
-Wire Wire Line
-	6450 3300 6650 3300
-Wire Wire Line
-	8650 3100 8750 3100
-Wire Wire Line
-	8650 3200 8750 3200
-Wire Wire Line
-	8650 3300 8750 3300
-$Comp
-L power:GND #GND?
-U 1 1 5E681F81
-P 7700 2750
-AR Path="/5E681F81" Ref="#GND?"  Part="1" 
-AR Path="/5DF27589/5E681F81" Ref="#GND04"  Part="1" 
-F 0 "#GND04" H 7700 2750 50  0001 C CNN
-F 1 "GND" H 7600 2550 59  0000 L BNN
-F 2 "" H 7700 2750 50  0001 C CNN
-F 3 "" H 7700 2750 50  0001 C CNN
-	1    7700 2750
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #P+?
-U 1 1 5E684B6F
-P 7500 2850
-AR Path="/5E684B6F" Ref="#P+?"  Part="1" 
-AR Path="/5DF27589/5E684B6F" Ref="#P+06"  Part="1" 
-F 0 "#P+06" H 7500 2850 50  0001 C CNN
-F 1 "+5V" H 7400 3000 59  0000 L BNN
-F 2 "" H 7500 2850 50  0001 C CNN
-F 3 "" H 7500 2850 50  0001 C CNN
-	1    7500 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR01
-U 1 1 5E686230
-P 7950 2850
-F 0 "#PWR01" H 7950 2700 50  0001 C CNN
-F 1 "+12V" H 7850 3050 50  0000 L CNN
-F 2 "" H 7950 2850 50  0001 C CNN
-F 3 "" H 7950 2850 50  0001 C CNN
-	1    7950 2850
-	1    0    0    -1  
-$EndComp
-Text GLabel 6950 4100 3    39   BiDi ~ 0
-KS1_CTL
-NoConn ~ 6650 3400
-Wire Wire Line
-	7650 2850 7650 2750
-Wire Wire Line
-	7650 2750 7700 2750
-Wire Wire Line
-	7800 2750 7800 2850
-Connection ~ 7700 2750
-Wire Wire Line
-	7700 2750 7800 2750
-Wire Wire Line
-	8650 3400 8750 3400
-Wire Wire Line
-	8650 3500 8750 3500
-NoConn ~ 7350 2850
-$Comp
-L PCB_2020:AMP_DUE_SCH U1
-U 6 1 5E7098FE
-P 7650 3400
-F 0 "U1" H 6606 3446 50  0000 R CNN
-F 1 "AMP_DUE_SCH" H 6606 3355 50  0000 R CNN
-F 2 "Drivetrain_control:Arduino DUE" H 7650 3400 50  0001 C CNN
-F 3 "" H 8200 3300 50  0001 C CNN
-	6    7650 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -245,4 +138,111 @@ Wire Wire Line
 	4050 6500 4100 6500
 Wire Wire Line
 	4050 6500 4750 6500
+$Comp
+L PCB_2020:AMP_DUE_SCH U1
+U 6 1 5E7098FE
+P 7650 3400
+F 0 "U1" H 6606 3446 50  0000 R CNN
+F 1 "AMP_DUE_SCH" H 6606 3355 50  0000 R CNN
+F 2 "Drivetrain_control:Arduino DUE" H 7650 3400 50  0001 C CNN
+F 3 "" H 8200 3300 50  0001 C CNN
+	6    7650 3400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7350 2850
+Wire Wire Line
+	8650 3500 8750 3500
+Wire Wire Line
+	8650 3400 8750 3400
+Wire Wire Line
+	7700 2750 7800 2750
+Connection ~ 7700 2750
+Wire Wire Line
+	7800 2750 7800 2850
+Wire Wire Line
+	7650 2750 7700 2750
+Wire Wire Line
+	7650 2850 7650 2750
+NoConn ~ 6650 3400
+Text GLabel 6950 4100 3    39   BiDi ~ 0
+KS1_CTL
+$Comp
+L power:+12V #PWR01
+U 1 1 5E686230
+P 7950 2850
+F 0 "#PWR01" H 7950 2700 50  0001 C CNN
+F 1 "+12V" H 7850 3050 50  0000 L CNN
+F 2 "" H 7950 2850 50  0001 C CNN
+F 3 "" H 7950 2850 50  0001 C CNN
+	1    7950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #P+?
+U 1 1 5E684B6F
+P 7500 2850
+AR Path="/5E684B6F" Ref="#P+?"  Part="1" 
+AR Path="/5DF27589/5E684B6F" Ref="#P+06"  Part="1" 
+F 0 "#P+06" H 7500 2850 50  0001 C CNN
+F 1 "+5V" H 7400 3000 59  0000 L BNN
+F 2 "" H 7500 2850 50  0001 C CNN
+F 3 "" H 7500 2850 50  0001 C CNN
+	1    7500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND?
+U 1 1 5E681F81
+P 7700 2750
+AR Path="/5E681F81" Ref="#GND?"  Part="1" 
+AR Path="/5DF27589/5E681F81" Ref="#GND04"  Part="1" 
+F 0 "#GND04" H 7700 2750 50  0001 C CNN
+F 1 "GND" H 7600 2550 59  0000 L BNN
+F 2 "" H 7700 2750 50  0001 C CNN
+F 3 "" H 7700 2750 50  0001 C CNN
+	1    7700 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 3300 8750 3300
+Wire Wire Line
+	8650 3200 8750 3200
+Wire Wire Line
+	8650 3100 8750 3100
+Wire Wire Line
+	6450 3300 6650 3300
+Text GLabel 6450 3300 0    39   Output ~ 0
+THROTTLE
+Wire Wire Line
+	7250 3950 7250 4100
+Wire Wire Line
+	7550 3950 7550 4100
+Wire Wire Line
+	7850 3950 7850 4100
+Text GLabel 8450 4100 3    39   BiDi ~ 0
+REV_CTL
+Text GLabel 7250 4100 3    39   BiDi ~ 0
+FWD_CTL
+Text GLabel 7550 4100 3    39   BiDi ~ 0
+FS1_CTL
+Text GLabel 7850 4100 3    39   Input ~ 0
+INPUT_A+_CTL
+Text GLabel 8150 4100 3    39   Output ~ 0
+EN+_CTL
+Text GLabel 8750 3300 2    39   BiDi ~ 0
+STEERING
+Wire Wire Line
+	8450 4100 8450 3950
+Wire Wire Line
+	6950 4100 6950 3950
+Wire Wire Line
+	8150 4100 8150 3950
+Text GLabel 8750 3200 2    39   Output ~ 0
+Brake_PWM_2
+Text GLabel 8750 3100 2    39   Output ~ 0
+Brake_PWM_1
+Text GLabel 8750 3400 2    39   BiDi ~ 0
+SCIB_TX
+Text GLabel 8750 3500 2    39   BiDi ~ 0
+SCIB_RX
 $EndSCHEMATC
