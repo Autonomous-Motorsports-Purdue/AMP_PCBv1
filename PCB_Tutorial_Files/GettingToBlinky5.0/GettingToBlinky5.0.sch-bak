@@ -1,0 +1,198 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R2
+U 1 1 5F7D1E23
+P 4400 4100
+F 0 "R2" H 4470 4146 50  0000 L CNN
+F 1 "470K" H 4470 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4330 4100 50  0001 C CNN
+F 3 "~" H 4400 4100 50  0001 C CNN
+	1    4400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F7D21B7
+P 4400 3600
+F 0 "R1" H 4470 3646 50  0000 L CNN
+F 1 "1K" H 4470 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4330 3600 50  0001 C CNN
+F 3 "~" H 4400 3600 50  0001 C CNN
+	1    4400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F7D23ED
+P 6400 4350
+F 0 "R3" H 6470 4396 50  0000 L CNN
+F 1 "1K" H 6470 4305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6330 4350 50  0001 C CNN
+F 3 "~" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F7D356D
+P 3850 4150
+F 0 "BT1" H 3968 4246 50  0000 L CNN
+F 1 "CR2032" H 3968 4155 50  0000 L CNN
+F 2 "GettingToBlinky5:S8211-46R" V 3850 4210 50  0001 C CNN
+F 3 "~" V 3850 4210 50  0001 C CNN
+	1    3850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F7D514D
+P 5300 5150
+F 0 "#PWR0101" H 5300 4900 50  0001 C CNN
+F 1 "GND" H 5305 4977 50  0000 C CNN
+F 2 "" H 5300 5150 50  0001 C CNN
+F 3 "" H 5300 5150 50  0001 C CNN
+	1    5300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F7D28B2
+P 4400 4550
+F 0 "C1" H 4515 4596 50  0000 L CNN
+F 1 "1U" H 4515 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4438 4400 50  0001 C CNN
+F 3 "~" H 4400 4550 50  0001 C CNN
+	1    4400 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3950 3850 3450
+Wire Wire Line
+	3850 3450 4400 3450
+Connection ~ 4400 3450
+Wire Wire Line
+	4400 3450 4800 3450
+Wire Wire Line
+	5250 3450 5500 3450
+Wire Wire Line
+	5500 3450 5500 3700
+Connection ~ 5250 3450
+Wire Wire Line
+	4400 3750 4400 3850
+Wire Wire Line
+	4400 4250 4400 4350
+Wire Wire Line
+	6400 4100 6400 4200
+Wire Wire Line
+	6400 5150 5300 5150
+Wire Wire Line
+	6400 5100 6400 5150
+Connection ~ 5300 5150
+Wire Wire Line
+	5300 4600 5300 4900
+Wire Wire Line
+	4400 4700 4400 4900
+Wire Wire Line
+	4400 4900 4800 4900
+Connection ~ 5300 4900
+Wire Wire Line
+	5300 4900 5300 5150
+Wire Wire Line
+	3850 4250 3850 4900
+Wire Wire Line
+	3850 4900 4400 4900
+Connection ~ 4400 4900
+Wire Wire Line
+	4400 3850 4850 3850
+Wire Wire Line
+	4850 3850 4850 3950
+Connection ~ 4400 3850
+Wire Wire Line
+	4400 3850 4400 3950
+Wire Wire Line
+	4850 4350 4700 4350
+Connection ~ 4400 4350
+Wire Wire Line
+	4400 4350 4400 4400
+Wire Wire Line
+	4700 4150 4700 4350
+Connection ~ 4700 4350
+Wire Wire Line
+	4700 4350 4400 4350
+Wire Wire Line
+	4700 4150 4850 4150
+NoConn ~ 5550 4600
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F7E01E1
+P 4800 3450
+F 0 "#FLG0101" H 4800 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 3623 50  0000 C CNN
+F 2 "" H 4800 3450 50  0001 C CNN
+F 3 "~" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3450 5250 3450
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F7E069D
+P 4800 4900
+F 0 "#FLG0102" H 4800 4975 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 5073 50  0000 C CNN
+F 2 "" H 4800 4900 50  0001 C CNN
+F 3 "~" H 4800 4900 50  0001 C CNN
+	1    4800 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 4900
+Wire Wire Line
+	4800 4900 5300 4900
+Connection ~ 5750 4100
+Wire Wire Line
+	5750 4100 6400 4100
+Wire Wire Line
+	5700 4100 5750 4100
+Wire Wire Line
+	5250 3450 5250 3700
+Wire Wire Line
+	6400 4500 6400 4800
+$Comp
+L GTB5:7555 U1
+U 1 1 5F7D0919
+P 5300 4100
+F 0 "U1" H 5300 4100 50  0000 L CNN
+F 1 "7555" H 5250 4300 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5350 4150 50  0001 C CNN
+F 3 "" H 5350 4150 50  0001 C CNN
+	1    5300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F7D2F91
+P 6400 4950
+F 0 "D1" V 6439 4832 50  0000 R CNN
+F 1 "LED" V 6348 4832 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 4950 50  0001 C CNN
+F 3 "~" H 6400 4950 50  0001 C CNN
+	1    6400 4950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4800 3450
+$EndSCHEMATC
