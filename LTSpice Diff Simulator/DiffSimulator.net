@@ -1,0 +1,13 @@
+* D:\AMP - Evan-dev\AMP_PCBv1\AMP_PCBv1\LTSpice Diff Simulator\DiffSimulator.asc
+V2 P001 0 SINE(1.65 1.1 1k)
+R1 N001 0 1000
+R2 N004 P001 1000
+R3 N002 N001 5454
+R4 N004 P002 5454
+XU1 N004 N001 N003 0 N002 LT1001
+V4 N003 0 12
+V1 P002 0 -3
+.tran 0 2m 0
+.lib LTC.lib
+.backanno
+.end
