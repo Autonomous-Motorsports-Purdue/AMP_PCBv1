@@ -82,7 +82,7 @@ AR Path="/6A2D04C9" Ref="C2"  Part="1"
 AR Path="/5DF27589/6A2D04C9" Ref="C2"  Part="1" 
 F 0 "C2" H 3360 6115 59  0000 L BNN
 F 1 "0.1uF" H 3360 5915 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3300 6100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3300 6100 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B104JBCNNNC/1276-1090-1-ND/3889176?utm_adgroup=Capacitors&slid=&pdv=c&pcrid=398891859082&productid=&utm_campaign=Dynamic+Search&mkwid=sK4nOncLn&utm_medium=cpc&utm_term=&gclid=CjwKCAiAmNbwBRBOEiwAqcwwpZSQgtNujl6BHsUYP-FQ70zdNcKZbQcVdbZiRuST7tQ2_ezynANN3xoCFdYQAvD_BwE&pmt=b&pkw=&utm_source=google" H 3300 6100 50  0001 C CNN
 	1    3300 6100
 	1    0    0    -1  
@@ -108,7 +108,7 @@ AR Path="/6C4A4E38" Ref="C5"  Part="1"
 AR Path="/5DF27589/6C4A4E38" Ref="C5"  Part="1" 
 F 0 "C5" H 4810 6115 59  0000 L BNN
 F 1 "0.1uF" H 4810 5915 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4750 6100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4750 6100 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B104JBCNNNC/1276-1090-1-ND/3889176?utm_adgroup=Capacitors&slid=&pdv=c&pcrid=398891859082&productid=&utm_campaign=Dynamic+Search&mkwid=sK4nOncLn&utm_medium=cpc&utm_term=&gclid=CjwKCAiAmNbwBRBOEiwAqcwwpZSQgtNujl6BHsUYP-FQ70zdNcKZbQcVdbZiRuST7tQ2_ezynANN3xoCFdYQAvD_BwE&pmt=b&pkw=&utm_source=google" H 4750 6100 50  0001 C CNN
 	1    4750 6100
 	1    0    0    -1  
@@ -131,112 +131,186 @@ Wire Wire Line
 Wire Wire Line
 	3300 6250 3300 6500
 Connection ~ 4050 6500
-$Comp
-L PCB_2020:AMP_DUE_SCH U1
-U 6 1 5E7098FE
-P 7650 3400
-F 0 "U1" H 6606 3446 50  0000 R CNN
-F 1 "AMP_DUE_SCH" H 6606 3355 50  0000 R CNN
-F 2 "Drivetrain_control:Arduino DUE" H 7650 3400 50  0001 C CNN
-F 3 "" H 8200 3300 50  0001 C CNN
-	6    7650 3400
-	1    0    0    -1  
-$EndComp
-NoConn ~ 7350 2850
 Wire Wire Line
-	8650 3500 8750 3500
+	10500 3300 10600 3300
 Wire Wire Line
-	8650 3400 8750 3400
-Wire Wire Line
-	7800 2750 7800 2850
-Wire Wire Line
-	7650 2850 7650 2750
-NoConn ~ 6650 3400
-Text GLabel 6950 4100 3    39   BiDi ~ 0
+	10500 3200 10600 3200
+Text GLabel 7000 4600 3    39   BiDi ~ 0
 KS1_CTL
 $Comp
 L PCB_2020-rescue:+12V-power #PWR01
 U 1 1 5E686230
-P 7950 2850
-F 0 "#PWR01" H 7950 2700 50  0001 C CNN
-F 1 "+12V-power" H 7850 3050 50  0000 L CNN
-F 2 "" H 7950 2850 50  0001 C CNN
-F 3 "" H 7950 2850 50  0001 C CNN
-	1    7950 2850
-	1    0    0    -1  
+P 6050 2200
+F 0 "#PWR01" H 6050 2050 50  0001 C CNN
+F 1 "+12V-power" H 5950 2400 50  0000 L CNN
+F 2 "" H 6050 2200 50  0001 C CNN
+F 3 "" H 6050 2200 50  0001 C CNN
+	1    6050 2200
+	0    -1   -1   0   
 $EndComp
 $Comp
 L PCB_2020-rescue:+5V-power #P+?
 U 1 1 5E684B6F
-P 7500 2850
+P 6350 1900
 AR Path="/5E684B6F" Ref="#P+?"  Part="1" 
 AR Path="/5DF27589/5E684B6F" Ref="#P+06"  Part="1" 
-F 0 "#P+06" H 7500 2850 50  0001 C CNN
-F 1 "+5V-power" H 7400 3000 59  0000 L BNN
-F 2 "" H 7500 2850 50  0001 C CNN
-F 3 "" H 7500 2850 50  0001 C CNN
-	1    7500 2850
-	1    0    0    -1  
+F 0 "#P+06" H 6350 1900 50  0001 C CNN
+F 1 "+5V-power" H 6250 2050 59  0000 L BNN
+F 2 "" H 6350 1900 50  0001 C CNN
+F 3 "" H 6350 1900 50  0001 C CNN
+	1    6350 1900
+	0    -1   -1   0   
 $EndComp
 $Comp
 L PCB_2020-rescue:GND-power #GND?
 U 1 1 5E681F81
-P 7700 2750
+P 6350 2100
 AR Path="/5E681F81" Ref="#GND?"  Part="1" 
 AR Path="/5DF27589/5E681F81" Ref="#GND04"  Part="1" 
-F 0 "#GND04" H 7700 2750 50  0001 C CNN
-F 1 "GND-power" H 7600 2550 59  0000 L BNN
-F 2 "" H 7700 2750 50  0001 C CNN
-F 3 "" H 7700 2750 50  0001 C CNN
-	1    7700 2750
-	-1   0    0    1   
+F 0 "#GND04" H 6350 2100 50  0001 C CNN
+F 1 "GND-power" H 6250 1900 59  0000 L BNN
+F 2 "" H 6350 2100 50  0001 C CNN
+F 3 "" H 6350 2100 50  0001 C CNN
+	1    6350 2100
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8650 3300 8750 3300
+	10500 2600 10600 2600
 Wire Wire Line
-	8650 3200 8750 3200
+	10500 2500 10600 2500
 Wire Wire Line
-	8650 3100 8750 3100
-Wire Wire Line
-	6450 3300 6650 3300
-Text GLabel 6450 3300 0    39   Output ~ 0
+	10500 2400 10600 2400
+Text GLabel 6450 3500 0    39   Output ~ 0
 THROTTLE
-Wire Wire Line
-	7250 3950 7250 4100
-Wire Wire Line
-	7550 3950 7550 4100
-Wire Wire Line
-	7850 3950 7850 4100
-Text GLabel 8450 4100 3    39   BiDi ~ 0
+Text GLabel 10000 4600 3    39   BiDi ~ 0
 REV_CTL
-Text GLabel 7250 4100 3    39   BiDi ~ 0
+Text GLabel 7600 4600 3    39   BiDi ~ 0
 FWD_CTL
-Text GLabel 7550 4100 3    39   BiDi ~ 0
+Text GLabel 8200 4600 3    39   BiDi ~ 0
 FS1_CTL
-Text GLabel 7850 4100 3    39   Input ~ 0
+Text GLabel 8800 4600 3    39   Input ~ 0
 INPUT_A+_CTL
-Text GLabel 8150 4100 3    39   Output ~ 0
+Text GLabel 9400 4600 3    39   Output ~ 0
 EN+_CTL
-Text GLabel 8750 3300 2    39   BiDi ~ 0
+Text GLabel 10600 2600 2    39   BiDi ~ 0
 STEERING
-Wire Wire Line
-	8450 4100 8450 3950
-Wire Wire Line
-	6950 4100 6950 3950
-Wire Wire Line
-	8150 4100 8150 3950
-Text GLabel 8750 3200 2    39   Output ~ 0
+Text GLabel 10600 2500 2    39   Output ~ 0
 Brake_PWM_2
-Text GLabel 8750 3100 2    39   Output ~ 0
+Text GLabel 10600 2400 2    39   Output ~ 0
 Brake_PWM_1
-Text GLabel 8750 3400 2    39   BiDi ~ 0
+Text GLabel 10600 3200 2    39   BiDi ~ 0
 SCIB_TX
-Text GLabel 8750 3500 2    39   BiDi ~ 0
+Text GLabel 10600 3300 2    39   BiDi ~ 0
 SCIB_RX
 Wire Wire Line
 	3300 6500 4050 6500
 Wire Wire Line
-	7650 2750 7800 2750
-Wire Wire Line
 	4050 6500 4750 6500
+$Comp
+L PCB_2020:AMP_DUE_SCH U1
+U 1 1 5F87F561
+P 8550 3050
+F 0 "U1" H 8550 4915 50  0000 C CNN
+F 1 "AMP_DUE_SCH" H 8550 4824 50  0000 C CNN
+F 2 "Drivetrain_control:Arduino DUE" H 8550 3050 50  0001 C CNN
+F 3 "" H 9100 2950 50  0001 C CNN
+	1    8550 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3500 6600 3500
+Wire Wire Line
+	7000 4600 7000 4450
+Wire Wire Line
+	7600 4600 7600 4450
+Wire Wire Line
+	8200 4600 8200 4450
+Wire Wire Line
+	8800 4450 8800 4600
+Wire Wire Line
+	9400 4450 9400 4600
+Wire Wire Line
+	10000 4600 10000 4450
+Wire Wire Line
+	6350 1900 6600 1900
+Wire Wire Line
+	6350 2100 6500 2100
+Wire Wire Line
+	6500 2100 6500 2000
+Wire Wire Line
+	6500 2000 6600 2000
+Connection ~ 6500 2100
+Wire Wire Line
+	6500 2100 6600 2100
+Wire Wire Line
+	6050 2200 6600 2200
+NoConn ~ 6600 1600
+NoConn ~ 6600 1700
+NoConn ~ 6600 1800
+NoConn ~ 6600 2300
+NoConn ~ 6600 2400
+NoConn ~ 6600 2500
+NoConn ~ 6600 2600
+NoConn ~ 6600 2700
+NoConn ~ 6600 2800
+NoConn ~ 6600 2900
+NoConn ~ 6600 3000
+NoConn ~ 6600 3100
+NoConn ~ 6600 3200
+NoConn ~ 6600 3300
+NoConn ~ 6600 3400
+NoConn ~ 6600 3600
+NoConn ~ 6600 3700
+NoConn ~ 6600 3800
+NoConn ~ 6800 4450
+NoConn ~ 6900 4450
+NoConn ~ 7100 4450
+NoConn ~ 7200 4450
+NoConn ~ 7300 4450
+NoConn ~ 7400 4450
+NoConn ~ 7500 4450
+NoConn ~ 7700 4450
+NoConn ~ 7800 4450
+NoConn ~ 7900 4450
+NoConn ~ 8000 4450
+NoConn ~ 8100 4450
+NoConn ~ 8300 4450
+NoConn ~ 8400 4450
+NoConn ~ 8500 4450
+NoConn ~ 8600 4450
+NoConn ~ 8700 4450
+NoConn ~ 8900 4450
+NoConn ~ 9000 4450
+NoConn ~ 9100 4450
+NoConn ~ 9200 4450
+NoConn ~ 10500 1600
+NoConn ~ 10500 1700
+NoConn ~ 10500 1800
+NoConn ~ 10500 1900
+NoConn ~ 10500 2000
+NoConn ~ 10500 2100
+NoConn ~ 10500 2200
+NoConn ~ 10500 2300
+NoConn ~ 10500 2700
+NoConn ~ 10500 2800
+NoConn ~ 10500 2900
+NoConn ~ 10500 3000
+NoConn ~ 10500 3100
+NoConn ~ 10500 3400
+NoConn ~ 10500 3500
+NoConn ~ 10500 3600
+NoConn ~ 10500 3700
+NoConn ~ 10500 3800
+NoConn ~ 10500 3900
+NoConn ~ 10500 4000
+NoConn ~ 10500 4100
+NoConn ~ 9300 4450
+NoConn ~ 9500 4450
+NoConn ~ 9600 4450
+NoConn ~ 9700 4450
+NoConn ~ 9800 4450
+NoConn ~ 9900 4450
+NoConn ~ 10100 4450
+NoConn ~ 10200 4450
+NoConn ~ 10300 4450
 $EndSCHEMATC
