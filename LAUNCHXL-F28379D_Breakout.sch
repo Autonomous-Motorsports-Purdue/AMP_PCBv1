@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PCB_2020-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 12535 9744
@@ -111,7 +110,7 @@ AR Path="/D7A12E91" Ref="R4"  Part="1"
 AR Path="/5DD5E236/D7A12E91" Ref="R4"  Part="1" 
 AR Path="/5DF27AC1/D7A12E91" Ref="R4"  Part="1" 
 F 0 "R4" V 4800 4050 59  0000 L BNN
-F 1 "6.8k" V 4600 4000 59  0000 L BNN
+F 1 "6.0k" V 4600 4000 59  0000 L BNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4700 4100 50  0001 C CNN
 F 3 "" H 4700 4100 50  0001 C CNN
 	1    4700 4100
@@ -255,20 +254,6 @@ F 1 "+12V" H 6550 2550 59  0000 L BNN
 F 2 "" H 6700 2400 50  0001 C CNN
 F 3 "" H 6700 2400 50  0001 C CNN
 	1    6700 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND6
-U 1 1 6DBAC010
-P 4300 4700
-AR Path="/6DBAC010" Ref="#GND6"  Part="1" 
-AR Path="/5DD5E236/6DBAC010" Ref="#GND6"  Part="1" 
-AR Path="/5DF27AC1/6DBAC010" Ref="#GND06"  Part="1" 
-F 0 "#GND06" H 4300 4700 50  0001 C CNN
-F 1 "GND" H 4200 4500 59  0000 L BNN
-F 2 "" H 4300 4700 50  0001 C CNN
-F 3 "" H 4300 4700 50  0001 C CNN
-	1    4300 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -471,21 +456,19 @@ Wire Wire Line
 $Comp
 L Device:R R3
 U 1 1 D43D5682
-P 4300 4400
+P 4000 4100
 AR Path="/D43D5682" Ref="R3"  Part="1" 
 AR Path="/5DD5E236/D43D5682" Ref="R3"  Part="1" 
 AR Path="/5DF27AC1/D43D5682" Ref="R3"  Part="1" 
-F 0 "R3" H 4150 4459 59  0000 L BNN
-F 1 "3k" H 4150 4270 59  0000 L BNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4300 4400 50  0001 C CNN
-F 3 "" H 4300 4400 50  0001 C CNN
-	1    4300 4400
-	1    0    0    -1  
+F 0 "R3" H 3850 4159 59  0000 L BNN
+F 1 "1.1k" H 3700 4050 59  0000 L BNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 4100 50  0001 C CNN
+F 3 "" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4300 4100 4300 4250
-Wire Wire Line
-	4300 4550 4300 4700
+	4300 4100 4150 4100
 Wire Wire Line
 	4800 1300 4800 1350
 Connection ~ 4800 1300
@@ -562,8 +545,6 @@ Wire Wire Line
 	5300 2900 5300 2950
 Wire Wire Line
 	5300 3250 5300 3900
-Wire Wire Line
-	4100 3400 4300 3400
 Wire Wire Line
 	4600 3750 4600 3900
 Wire Wire Line
@@ -741,8 +722,8 @@ F 3 "https://www.molex.com/molex/products/datasheet.jsp?part=active/0022272021_P
 $EndComp
 Text Notes 7700 4150 2    39   ~ 0
 resistor code is either 195 - 1.9M ohms\nor 561 - 560 ohms
-Text Notes 4950 5100 2    39   ~ 0
-These resistors are chosen to get 10/3 gain
+Text Notes 4650 5450 2    39   ~ 0
+These resistors are chosen to get 60/11 gain
 Text Label 6000 1700 0    70   ~ 0
 INPUT_B+
 Text Label 5600 3500 0    70   ~ 0
@@ -777,6 +758,96 @@ F 3 "https://www.infineon.com/dgdl/irl530npbf.pdf?fileId=5546d462533600a40153565
 	1    5300 1600
 	0    1    1    0   
 $EndComp
-Text GLabel 4100 3400 0    39   BiDi ~ 0
+Text GLabel 3050 3400 0    39   BiDi ~ 0
 THROTTLE
+$Comp
+L Device:R R?
+U 1 1 5F860B43
+P 3850 3400
+AR Path="/5F860B43" Ref="R?"  Part="1" 
+AR Path="/5DD5E236/5F860B43" Ref="R?"  Part="1" 
+AR Path="/5DF27AC1/5F860B43" Ref="R2"  Part="1" 
+F 0 "R2" H 3700 3459 59  0000 L BNN
+F 1 "1.1k" H 3550 3350 59  0000 L BNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3850 3400 50  0001 C CNN
+F 3 "" H 3850 3400 50  0001 C CNN
+	1    3850 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 3400 4200 3400
+Wire Wire Line
+	4200 3400 4200 3100
+Connection ~ 4200 3400
+Wire Wire Line
+	4200 3400 4300 3400
+$Comp
+L Device:R R?
+U 1 1 5F869B9B
+P 4200 2950
+AR Path="/5F869B9B" Ref="R?"  Part="1" 
+AR Path="/5DD5E236/5F869B9B" Ref="R?"  Part="1" 
+AR Path="/5DF27AC1/5F869B9B" Ref="R4"  Part="1" 
+F 0 "R4" H 4000 3000 59  0000 L BNN
+F 1 "6.0k" H 3950 2900 59  0000 L BNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 2950 50  0001 C CNN
+F 3 "" H 4200 2950 50  0001 C CNN
+	1    4200 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 2700 4200 2800
+$Comp
+L power:GND #GND?
+U 1 1 5F86CB5F
+P 4200 2700
+AR Path="/5F86CB5F" Ref="#GND?"  Part="1" 
+AR Path="/5DD5E236/5F86CB5F" Ref="#GND?"  Part="1" 
+AR Path="/5DF27AC1/5F86CB5F" Ref="#GND?"  Part="1" 
+F 0 "#GND?" H 4200 2700 50  0001 C CNN
+F 1 "GND" H 4100 2500 59  0000 L BNN
+F 2 "" H 4200 2700 50  0001 C CNN
+F 3 "" H 4200 2700 50  0001 C CNN
+	1    4200 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5F99BDE7
+P 3250 3650
+F 0 "RV?" H 3181 3696 50  0000 R CNN
+F 1 "10.0k" H 3181 3605 50  0000 R CNN
+F 2 "" H 3250 3650 50  0001 C CNN
+F 3 "~" H 3250 3650 50  0001 C CNN
+	1    3250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4100 3850 4100
+Wire Wire Line
+	3250 3700 3250 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5F9A52EE
+P 3250 3950
+F 0 "#PWR?" H 3250 3700 50  0001 C CNN
+F 1 "GND" H 3255 3777 50  0000 C CNN
+F 2 "" H 3250 3950 50  0001 C CNN
+F 3 "" H 3250 3950 50  0001 C CNN
+	1    3250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3650 3400 4100
+Wire Wire Line
+	3050 3400 3250 3400
+Wire Wire Line
+	3250 3400 3250 3500
+Connection ~ 3250 3400
+Wire Wire Line
+	3250 3400 3700 3400
+Wire Wire Line
+	3250 3800 3250 3950
+Text Notes 2900 3700 2    34   ~ 0
+Set Rtop of the potentiometer to be 8k when throttle is 2.75V\nSet Rtop of the potentiometer to be 10k when throttle is 0.55V
 $EndSCHEMATC
