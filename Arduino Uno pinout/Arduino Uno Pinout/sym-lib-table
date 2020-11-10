@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Arduino_Uno_Pin)(type Legacy)(uri ${KIPRJMOD}/Arduino_Uno_Pin.lib)(options "")(descr ""))
+  (lib (name Feather_LoRa_Pin)(type Legacy)(uri ${KIPRJMOD}/Feather_LoRa_Pin.lib)(options "")(descr ""))
 )
