@@ -537,18 +537,6 @@ F 3 "https://www.infineon.com/dgdl/irl530npbf.pdf?fileId=5546d462533600a40153565
 	1    11000 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L PCB_2020-rescue:Conn_01x06_Male-Connector CONN6
-U 1 1 5E187579
-P 1450 7450
-F 0 "CONN6" H 1558 7831 50  0000 C CNN
-F 1 "Brake_MC_CONN" H 1558 7740 50  0000 C CNN
-F 2 "Drivetrain_control:Brake_MC_Conn_6_pin" H 1450 7450 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/product-files/3190/drv8871.pdf" H 1450 7450 50  0001 C CNN
-F 4 "https://learn.adafruit.com/adafruit-drv8871-brushed-dc-motor-driver-breakout/" H 1450 7450 50  0001 C CNN "Website"
-	1    1450 7450
-	1    0    0    -1  
-$EndComp
 Text GLabel 1650 7350 2    39   Input ~ 0
 Brake_PWM_2
 Text GLabel 1650 7250 2    39   Input ~ 0
@@ -974,4 +962,16 @@ F 3 "" H 2150 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 3950 2650 3950
+$Comp
+L PCB_2020-rescue:Conn_01x06_Male-Connector CONN6
+U 1 1 5E187579
+P 1450 7450
+F 0 "CONN6" H 1558 7831 50  0000 C CNN
+F 1 "Brake_MC_CONN" H 1558 7740 50  0000 C CNN
+F 2 "Drivetrain_control:Brake_MC_Conn_6_pin" H 1450 7450 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/product-files/3190/drv8871.pdf" H 1450 7450 50  0001 C CNN
+F 4 "https://learn.adafruit.com/adafruit-drv8871-brushed-dc-motor-driver-breakout/" H 1450 7450 50  0001 C CNN "Website"
+	1    1450 7450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

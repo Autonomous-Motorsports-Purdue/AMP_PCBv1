@@ -126,7 +126,7 @@ AR Path="/5DD5E236/0B6559E8" Ref="R1"  Part="1"
 AR Path="/5DF27AC1/0B6559E8" Ref="R1"  Part="1" 
 F 0 "R1" H 4600 1550 59  0000 L BNN
 F 1 "10k" H 4550 1450 59  0000 L BNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4800 1500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 4800 1500 50  0001 C CNN
 F 3 "" H 4800 1500 50  0001 C CNN
 	1    4800 1500
 	1    0    0    -1  
@@ -154,7 +154,7 @@ AR Path="/5DD5E236/325BC02B" Ref="R5"  Part="1"
 AR Path="/5DF27AC1/325BC02B" Ref="R5"  Part="1" 
 F 0 "R5" H 6550 2759 59  0000 L BNN
 F 1 "560" H 6550 2570 59  0000 L BNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6700 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 6700 2700 50  0001 C CNN
 F 3 "" H 6700 2700 50  0001 C CNN
 	1    6700 2700
 	1    0    0    -1  
@@ -252,7 +252,7 @@ AR Path="/5DD5E236/1A44BE4A" Ref="R18"  Part="1"
 AR Path="/5DF27AC1/1A44BE4A" Ref="R18"  Part="1" 
 F 0 "R18" H 7650 2759 59  0000 L BNN
 F 1 "560" H 7650 2570 59  0000 L BNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7800 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 7800 2700 50  0001 C CNN
 F 3 "" H 7800 2700 50  0001 C CNN
 	1    7800 2700
 	1    0    0    -1  
@@ -401,7 +401,7 @@ AR Path="/5DD5E236/96F6590E" Ref="R2"  Part="1"
 AR Path="/5DF27AC1/96F6590E" Ref="R2"  Part="1" 
 F 0 "R2" H 5600 1500 59  0000 L BNN
 F 1 "10k" H 5550 1400 59  0000 L BNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 1500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 5800 1500 50  0001 C CNN
 F 3 "" H 5800 1500 50  0001 C CNN
 	1    5800 1500
 	1    0    0    -1  
@@ -537,18 +537,6 @@ F 3 "https://www.infineon.com/dgdl/irl530npbf.pdf?fileId=5546d462533600a40153565
 	1    11000 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L PCB_2020-rescue:Conn_01x06_Male-Connector CONN6
-U 1 1 5E187579
-P 1450 7450
-F 0 "CONN6" H 1558 7831 50  0000 C CNN
-F 1 "Brake_MC_CONN" H 1558 7740 50  0000 C CNN
-F 2 "Drivetrain_control:Brake_MC_Conn_6_pin" H 1450 7450 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/product-files/3190/drv8871.pdf" H 1450 7450 50  0001 C CNN
-F 4 "https://learn.adafruit.com/adafruit-drv8871-brushed-dc-motor-driver-breakout/" H 1450 7450 50  0001 C CNN "Website"
-	1    1450 7450
-	1    0    0    -1  
-$EndComp
 Text GLabel 1650 7350 2    39   Input ~ 0
 Brake_PWM_2
 Text GLabel 1650 7250 2    39   Input ~ 0
@@ -671,7 +659,7 @@ U 1 1 5F87912D
 P 3350 3950
 F 0 "R3" V 3143 3950 50  0000 C CNN
 F 1 "1000" V 3234 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 3950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 3280 3950 50  0001 C CNN
 F 3 "" H 3350 3950 50  0001 C CNN
 	1    3350 3950
 	0    1    1    0   
@@ -707,7 +695,7 @@ U 1 1 5F880B06
 P 4300 4750
 F 0 "R7" V 4093 4750 50  0000 C CNN
 F 1 "5400" V 4184 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 4230 4750 50  0001 C CNN
 F 3 "" H 4300 4750 50  0001 C CNN
 	1    4300 4750
 	0    1    1    0   
@@ -722,7 +710,7 @@ U 1 1 5F8886B4
 P 3350 3050
 F 0 "R6" H 3420 3096 50  0000 L CNN
 F 1 "5400" H 3420 3005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 3050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 3280 3050 50  0001 C CNN
 F 3 "" H 3350 3050 50  0001 C CNN
 	1    3350 3050
 	1    0    0    -1  
@@ -737,7 +725,7 @@ U 1 1 5F895F96
 P 3100 3400
 F 0 "R4" V 2893 3400 50  0000 C CNN
 F 1 "1000" V 2984 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3030 3400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 3030 3400 50  0001 C CNN
 F 3 "" H 3100 3400 50  0001 C CNN
 	1    3100 3400
 	0    1    1    0   
@@ -930,7 +918,7 @@ U 1 1 5F93027B
 P 2950 4100
 F 0 "R9" V 2743 4100 50  0000 C CNN
 F 1 "1000" V 2834 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 2880 4100 50  0001 C CNN
 F 3 "" H 2950 4100 50  0001 C CNN
 	1    2950 4100
 	-1   0    0    1   
@@ -941,7 +929,7 @@ U 1 1 5F930BFF
 P 2800 3950
 F 0 "R8" V 2593 3950 50  0000 C CNN
 F 1 "5000" V 2684 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2730 3950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 2730 3950 50  0001 C CNN
 F 3 "" H 2800 3950 50  0001 C CNN
 	1    2800 3950
 	0    1    1    0   
@@ -974,4 +962,16 @@ F 3 "" H 2150 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 3950 2650 3950
+$Comp
+L PCB_2020-rescue:Conn_01x06_Male-Connector CONN6
+U 1 1 5E187579
+P 1450 7450
+F 0 "CONN6" H 1558 7831 50  0000 C CNN
+F 1 "Brake_MC_CONN" H 1558 7740 50  0000 C CNN
+F 2 "Drivetrain_control:Brake_MC_Conn_6_pin" H 1450 7450 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/product-files/3190/drv8871.pdf" H 1450 7450 50  0001 C CNN
+F 4 "https://learn.adafruit.com/adafruit-drv8871-brushed-dc-motor-driver-breakout/" H 1450 7450 50  0001 C CNN "Website"
+	1    1450 7450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
