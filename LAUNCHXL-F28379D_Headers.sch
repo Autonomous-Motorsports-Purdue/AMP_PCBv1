@@ -82,7 +82,7 @@ AR Path="/6A2D04C9" Ref="C2"  Part="1"
 AR Path="/5DF27589/6A2D04C9" Ref="C2"  Part="1" 
 F 0 "C2" H 3360 6115 59  0000 L BNN
 F 1 "0.1uF" H 3360 5915 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3300 6100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3300 6100 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B104JBCNNNC/1276-1090-1-ND/3889176?utm_adgroup=Capacitors&slid=&pdv=c&pcrid=398891859082&productid=&utm_campaign=Dynamic+Search&mkwid=sK4nOncLn&utm_medium=cpc&utm_term=&gclid=CjwKCAiAmNbwBRBOEiwAqcwwpZSQgtNujl6BHsUYP-FQ70zdNcKZbQcVdbZiRuST7tQ2_ezynANN3xoCFdYQAvD_BwE&pmt=b&pkw=&utm_source=google" H 3300 6100 50  0001 C CNN
 	1    3300 6100
 	1    0    0    -1  
@@ -108,7 +108,7 @@ AR Path="/6C4A4E38" Ref="C5"  Part="1"
 AR Path="/5DF27589/6C4A4E38" Ref="C5"  Part="1" 
 F 0 "C5" H 4810 6115 59  0000 L BNN
 F 1 "0.1uF" H 4810 5915 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4750 6100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4750 6100 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B104JBCNNNC/1276-1090-1-ND/3889176?utm_adgroup=Capacitors&slid=&pdv=c&pcrid=398891859082&productid=&utm_campaign=Dynamic+Search&mkwid=sK4nOncLn&utm_medium=cpc&utm_term=&gclid=CjwKCAiAmNbwBRBOEiwAqcwwpZSQgtNujl6BHsUYP-FQ70zdNcKZbQcVdbZiRuST7tQ2_ezynANN3xoCFdYQAvD_BwE&pmt=b&pkw=&utm_source=google" H 4750 6100 50  0001 C CNN
 	1    4750 6100
 	1    0    0    -1  
@@ -324,10 +324,10 @@ F 3 "" H 4050 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PCB_2020-rescue:+3V3-power #PWR?
+L PCB_2020-rescue:+3V3-power #PWR0108
 U 1 1 5FAB7823
 P 6400 1800
-F 0 "#PWR?" H 6400 1650 50  0001 C CNN
+F 0 "#PWR0108" H 6400 1650 50  0001 C CNN
 F 1 "+3V3-power" H 6415 1973 50  0000 C CNN
 F 2 "" H 6400 1800 50  0001 C CNN
 F 3 "" H 6400 1800 50  0001 C CNN
@@ -336,12 +336,11 @@ F 3 "" H 6400 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6400 1800 6600 1800
-Connection ~ 6300 2100
 $Comp
-L PCB_2020-rescue:GND-power #PWR?
+L PCB_2020-rescue:GND-power #PWR0109
 U 1 1 5FABAD06
 P 3500 3100
-F 0 "#PWR?" H 3500 2850 50  0001 C CNN
+F 0 "#PWR0109" H 3500 2850 50  0001 C CNN
 F 1 "GND-power" V 3505 2973 50  0000 R CNN
 F 2 "" H 3500 3100 50  0001 C CNN
 F 3 "" H 3500 3100 50  0001 C CNN
@@ -349,10 +348,10 @@ F 3 "" H 3500 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PCB_2020-rescue:+3V3-power #PWR?
+L PCB_2020-rescue:+3V3-power #PWR0110
 U 1 1 5FABBDB9
 P 3500 2900
-F 0 "#PWR?" H 3500 2750 50  0001 C CNN
+F 0 "#PWR0110" H 3500 2750 50  0001 C CNN
 F 1 "+3V3-power" V 3515 3027 50  0000 L CNN
 F 2 "" H 3500 2900 50  0001 C CNN
 F 3 "" H 3500 2900 50  0001 C CNN

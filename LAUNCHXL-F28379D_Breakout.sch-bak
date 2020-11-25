@@ -126,7 +126,7 @@ AR Path="/5DD5E236/0B6559E8" Ref="R1"  Part="1"
 AR Path="/5DF27AC1/0B6559E8" Ref="R1"  Part="1" 
 F 0 "R1" H 4600 1550 59  0000 L BNN
 F 1 "10k" H 4550 1450 59  0000 L BNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 4800 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 4800 1500 50  0001 C CNN
 F 3 "" H 4800 1500 50  0001 C CNN
 	1    4800 1500
 	1    0    0    -1  
@@ -154,7 +154,7 @@ AR Path="/5DD5E236/325BC02B" Ref="R5"  Part="1"
 AR Path="/5DF27AC1/325BC02B" Ref="R5"  Part="1" 
 F 0 "R5" H 6550 2759 59  0000 L BNN
 F 1 "560" H 6550 2570 59  0000 L BNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 6700 2700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 6700 2700 50  0001 C CNN
 F 3 "" H 6700 2700 50  0001 C CNN
 	1    6700 2700
 	1    0    0    -1  
@@ -249,10 +249,10 @@ U 1 1 1A44BE4A
 P 7800 2700
 AR Path="/1A44BE4A" Ref="R18"  Part="1" 
 AR Path="/5DD5E236/1A44BE4A" Ref="R18"  Part="1" 
-AR Path="/5DF27AC1/1A44BE4A" Ref="R18"  Part="1" 
-F 0 "R18" H 7650 2759 59  0000 L BNN
+AR Path="/5DF27AC1/1A44BE4A" Ref="R10"  Part="1" 
+F 0 "R10" H 7650 2759 59  0000 L BNN
 F 1 "560" H 7650 2570 59  0000 L BNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 7800 2700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 7800 2700 50  0001 C CNN
 F 3 "" H 7800 2700 50  0001 C CNN
 	1    7800 2700
 	1    0    0    -1  
@@ -401,7 +401,7 @@ AR Path="/5DD5E236/96F6590E" Ref="R2"  Part="1"
 AR Path="/5DF27AC1/96F6590E" Ref="R2"  Part="1" 
 F 0 "R2" H 5600 1500 59  0000 L BNN
 F 1 "10k" H 5550 1400 59  0000 L BNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 5800 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 5800 1500 50  0001 C CNN
 F 3 "" H 5800 1500 50  0001 C CNN
 	1    5800 1500
 	1    0    0    -1  
@@ -659,7 +659,7 @@ U 1 1 5F87912D
 P 3350 3950
 F 0 "R3" V 3143 3950 50  0000 C CNN
 F 1 "1000" V 3234 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 3280 3950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 3280 3950 50  0001 C CNN
 F 3 "" H 3350 3950 50  0001 C CNN
 	1    3350 3950
 	0    1    1    0   
@@ -695,7 +695,7 @@ U 1 1 5F880B06
 P 4300 4750
 F 0 "R7" V 4093 4750 50  0000 C CNN
 F 1 "5400" V 4184 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 4230 4750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 4230 4750 50  0001 C CNN
 F 3 "" H 4300 4750 50  0001 C CNN
 	1    4300 4750
 	0    1    1    0   
@@ -710,7 +710,7 @@ U 1 1 5F8886B4
 P 3350 3050
 F 0 "R6" H 3420 3096 50  0000 L CNN
 F 1 "5400" H 3420 3005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 3280 3050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 3280 3050 50  0001 C CNN
 F 3 "" H 3350 3050 50  0001 C CNN
 	1    3350 3050
 	1    0    0    -1  
@@ -725,7 +725,7 @@ U 1 1 5F895F96
 P 3100 3400
 F 0 "R4" V 2893 3400 50  0000 C CNN
 F 1 "1000" V 2984 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 3030 3400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 3030 3400 50  0001 C CNN
 F 3 "" H 3100 3400 50  0001 C CNN
 	1    3100 3400
 	0    1    1    0   
@@ -821,17 +821,6 @@ F 3 "" H 5800 6100 50  0001 C CNN
 	1    5800 6100
 	1    0    0    -1  
 $EndComp
-$Comp
-L PCB_2020-rescue:C-Device C1
-U 1 1 5F8F6CA9
-P 8350 6100
-F 0 "C1" V 8098 6100 50  0000 C CNN
-F 1 "0.022uF" V 8189 6100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8388 5950 50  0001 C CNN
-F 3 "" H 8350 6100 50  0001 C CNN
-	1    8350 6100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8050 6100 8200 6100
 Wire Wire Line
@@ -878,7 +867,7 @@ U 1 1 5F91AB54
 P 9100 6300
 F 0 "C3" V 8848 6300 50  0000 C CNN
 F 1 "0.022uF" V 8939 6300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9138 6150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 9138 6150 50  0001 C CNN
 F 3 "" H 9100 6300 50  0001 C CNN
 	1    9100 6300
 	0    1    1    0   
@@ -918,7 +907,7 @@ U 1 1 5F93027B
 P 2950 4100
 F 0 "R9" V 2743 4100 50  0000 C CNN
 F 1 "1000" V 2834 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 2880 4100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 2880 4100 50  0001 C CNN
 F 3 "" H 2950 4100 50  0001 C CNN
 	1    2950 4100
 	-1   0    0    1   
@@ -929,7 +918,7 @@ U 1 1 5F930BFF
 P 2800 3950
 F 0 "R8" V 2593 3950 50  0000 C CNN
 F 1 "5000" V 2684 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" V 2730 3950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 2730 3950 50  0001 C CNN
 F 3 "" H 2800 3950 50  0001 C CNN
 	1    2800 3950
 	0    1    1    0   
@@ -973,5 +962,16 @@ F 3 "https://cdn-shop.adafruit.com/product-files/3190/drv8871.pdf" H 1450 7450 5
 F 4 "https://learn.adafruit.com/adafruit-drv8871-brushed-dc-motor-driver-breakout/" H 1450 7450 50  0001 C CNN "Website"
 	1    1450 7450
 	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_2020-rescue:C-Device C1
+U 1 1 5FB532D1
+P 8350 6100
+F 0 "C1" V 8098 6100 50  0000 C CNN
+F 1 "0.022 uF" V 8189 6100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 8388 5950 50  0001 C CNN
+F 3 "" H 8350 6100 50  0001 C CNN
+	1    8350 6100
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
