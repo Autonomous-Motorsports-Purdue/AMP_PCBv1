@@ -1,4 +1,4 @@
-19011814701272763
+19015033699392613
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50740,8 +50740,8 @@ DRV8874PWPR
 
 
 0
-32
-32
+17
+17
 Drivetrain_control
 FTDI_CONN
 ftdi (usb) to uart converter
@@ -50756,6 +50756,20 @@ LoRa
 0
 32
 32
+Drivetrain_control
+SN74AS08N
+
+
+0
+14
+14
+Drivetrain_control
+STK681-332-E
+
+
+0
+19
+19
 Drivetrain_control
 Samtec_TI_Footprint
 Samtec HLE .100" Tiger Beam Cost-effective Single Beam Socket Strip, HLE-110-02-xx-DV-TE, 10 Pins per row (http://suddendocs.samtec.com/prints/hle-1xx-02-xx-dv-xe-xx-mkt.pdf, http://suddendocs.samtec.com/prints/hle-thru.pdf), generated with kicad-footprint-generator

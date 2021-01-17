@@ -1,8 +1,5 @@
 PCB Documentation
 
-
-
-
 	- H-bridge
 		- An H-bridge is made up of four MOSFETs and four diodes.
 		- It switches motor direction based on which two MOSFETs are on.
@@ -10,10 +7,9 @@ PCB Documentation
 		- The current solution is Adafruit DRV8871.
 			- Its current Limit is 3.6 Amps.
 			- This is not enough for the brake Linear Actuator.
-		- Recommend switching from DRV8871 to using DRV8874.
-		- DRV8874 has peak current capabilities of 6 A, which is enough for the braking actuator.
-		- Has 16 pins instead of 8 like the DRV8871.
-		- https://www.ti.com/lit/ds/symlink/drv8874.pdf?ts=1602027363204&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDRV8874
+		- Recommend switching from DRV8871 to MCP1407.
+		- Has peak current capability of 6 A, which is enough for the braking actuator.
+		- https://ww1.microchip.com/downloads/en/DeviceDoc/20002019C.pdf
 			
 	- Steering PWM
 		- A square wave is sent to input A of the servo.

@@ -135,7 +135,7 @@ Wire Wire Line
 	10500 3300 10600 3300
 Wire Wire Line
 	10500 3200 10600 3200
-Text GLabel 7000 4600 3    39   BiDi ~ 0
+Text GLabel 10000 4450 3    39   BiDi ~ 0
 KS1_CTL
 $Comp
 L PCB_2020-rescue:+12V-power #PWR01
@@ -174,29 +174,23 @@ F 3 "" H 6350 2100 50  0001 C CNN
 	1    6350 2100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10500 2600 10600 2600
-Wire Wire Line
-	10500 2500 10600 2500
-Wire Wire Line
-	10500 2400 10600 2400
 Text GLabel 6450 3500 0    39   Output ~ 0
 THROTTLE
-Text GLabel 10000 4600 3    39   BiDi ~ 0
+Text GLabel 7000 4450 3    39   BiDi ~ 0
 REV_CTL
-Text GLabel 7600 4600 3    39   BiDi ~ 0
+Text GLabel 9400 4450 3    39   BiDi ~ 0
 FWD_CTL
-Text GLabel 8200 4600 3    39   BiDi ~ 0
+Text GLabel 8800 4450 3    39   BiDi ~ 0
 FS1_CTL
-Text GLabel 8800 4600 3    39   Input ~ 0
+Text GLabel 8200 4450 3    39   Input ~ 0
 INPUT_A+_CTL
-Text GLabel 9400 4600 3    39   Output ~ 0
+Text GLabel 7600 4450 3    39   Output ~ 0
 EN+_CTL
-Text GLabel 10600 2600 2    39   BiDi ~ 0
+Text GLabel 7900 4450 3    39   BiDi ~ 0
 STEERING
-Text GLabel 10600 2500 2    39   Output ~ 0
+Text GLabel 10500 3600 2    39   Output ~ 0
 Brake_PWM_2
-Text GLabel 10600 2400 2    39   Output ~ 0
+Text GLabel 10500 3700 2    39   Output ~ 0
 Brake_PWM_1
 Text GLabel 10600 3200 2    39   BiDi ~ 0
 SCIB_TX
@@ -219,18 +213,6 @@ F 3 "" H 9100 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6450 3500 6600 3500
-Wire Wire Line
-	7000 4600 7000 4450
-Wire Wire Line
-	7600 4600 7600 4450
-Wire Wire Line
-	8200 4600 8200 4450
-Wire Wire Line
-	8800 4450 8800 4600
-Wire Wire Line
-	9400 4450 9400 4600
-Wire Wire Line
-	10000 4600 10000 4450
 Wire Wire Line
 	6350 1900 6600 1900
 Wire Wire Line
@@ -270,7 +252,6 @@ NoConn ~ 7400 4450
 NoConn ~ 7500 4450
 NoConn ~ 7700 4450
 NoConn ~ 7800 4450
-NoConn ~ 7900 4450
 NoConn ~ 8000 4450
 NoConn ~ 8100 4450
 NoConn ~ 8300 4450
@@ -297,9 +278,6 @@ NoConn ~ 10500 3000
 NoConn ~ 10500 3100
 NoConn ~ 10500 3400
 NoConn ~ 10500 3500
-NoConn ~ 10500 3600
-NoConn ~ 10500 3700
-NoConn ~ 10500 3800
 NoConn ~ 10500 3900
 NoConn ~ 10500 4000
 NoConn ~ 10500 4100
@@ -315,12 +293,12 @@ NoConn ~ 10300 4450
 $Comp
 L PCB_2020-rescue:LoRa U4
 U 1 1 5FA8EB82
-P 4050 3550
-F 0 "U4" H 4050 4615 50  0000 C CNN
-F 1 "LoRa" H 4050 4524 50  0000 C CNN
-F 2 "Drivetrain_control:LoRa" H 4050 3950 50  0001 C CNN
-F 3 "" H 4050 3950 50  0001 C CNN
-	1    4050 3550
+P 4500 4300
+F 0 "U4" H 4500 5365 50  0000 C CNN
+F 1 "LoRa" H 4500 5274 50  0000 C CNN
+F 2 "Drivetrain_control:LoRa" H 4500 4700 50  0001 C CNN
+F 3 "" H 4500 4700 50  0001 C CNN
+	1    4500 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -339,23 +317,71 @@ Wire Wire Line
 $Comp
 L PCB_2020-rescue:GND-power #PWR0109
 U 1 1 5FABAD06
-P 3500 3100
-F 0 "#PWR0109" H 3500 2850 50  0001 C CNN
-F 1 "GND-power" V 3505 2973 50  0000 R CNN
-F 2 "" H 3500 3100 50  0001 C CNN
-F 3 "" H 3500 3100 50  0001 C CNN
-	1    3500 3100
+P 3950 3850
+F 0 "#PWR0109" H 3950 3600 50  0001 C CNN
+F 1 "GND-power" V 3955 3723 50  0000 R CNN
+F 2 "" H 3950 3850 50  0001 C CNN
+F 3 "" H 3950 3850 50  0001 C CNN
+	1    3950 3850
 	0    1    1    0   
 $EndComp
 $Comp
-L PCB_2020-rescue:+3V3-power #PWR0110
-U 1 1 5FABBDB9
-P 3500 2900
-F 0 "#PWR0110" H 3500 2750 50  0001 C CNN
-F 1 "+3V3-power" V 3515 3027 50  0000 L CNN
-F 2 "" H 3500 2900 50  0001 C CNN
-F 3 "" H 3500 2900 50  0001 C CNN
-	1    3500 2900
-	0    -1   -1   0   
+L PCB_2020-rescue:+5V-power #PWR?
+U 1 1 5FECCC22
+P 5050 4050
+F 0 "#PWR?" H 5050 3900 50  0001 C CNN
+F 1 "+5V-power" V 5065 4178 50  0000 L CNN
+F 2 "" H 5050 4050 50  0001 C CNN
+F 3 "" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	0    1    1    0   
 $EndComp
+$Comp
+L 2021-01-12_19-55-02:SN74AS08N U?
+U 1 1 6002F62B
+P 1300 4300
+F 0 "U?" H 2400 4687 60  0000 C CNN
+F 1 "SN74AS08N" H 2400 4581 60  0000 C CNN
+F 2 "N14" H 2400 4540 60  0001 C CNN
+F 3 "" H 1300 4300 60  0000 C CNN
+	1    1300 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3500 4400
+NoConn ~ 3500 4500
+NoConn ~ 3500 4600
+NoConn ~ 3500 4700
+NoConn ~ 3500 4800
+NoConn ~ 3500 4900
+NoConn ~ 1300 4800
+NoConn ~ 1300 4700
+NoConn ~ 1300 4600
+$Comp
+L PCB_2020-rescue:+5V-power #PWR?
+U 1 1 6003277D
+P 3500 4300
+F 0 "#PWR?" H 3500 4150 50  0001 C CNN
+F 1 "+5V-power" H 3515 4473 50  0000 C CNN
+F 2 "" H 3500 4300 50  0001 C CNN
+F 3 "" H 3500 4300 50  0001 C CNN
+	1    3500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_2020-rescue:GND-power #PWR?
+U 1 1 6003369A
+P 1300 4950
+F 0 "#PWR?" H 1300 4700 50  0001 C CNN
+F 1 "GND-power" H 1305 4777 50  0000 C CNN
+F 2 "" H 1300 4950 50  0001 C CNN
+F 3 "" H 1300 4950 50  0001 C CNN
+	1    1300 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4900 1300 4950
+NoConn ~ 10500 2600
+NoConn ~ 10500 3800
+NoConn ~ 10500 2400
+NoConn ~ 10500 2500
 $EndSCHEMATC

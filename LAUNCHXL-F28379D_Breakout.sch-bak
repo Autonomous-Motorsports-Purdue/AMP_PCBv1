@@ -744,42 +744,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 3850 5000 4750
 $Comp
-L PCB_2020:DRV8874 U3
-U 1 1 5F8C5C8E
-P 7400 6250
-F 0 "U3" H 7425 6915 50  0000 C CNN
-F 1 "DRV8874" H 7425 6824 50  0000 C CNN
-F 2 "Drivetrain_control:DRV8874PWPR" H 7400 6100 50  0001 C CNN
-F 3 "" H 7400 6100 50  0001 C CNN
-	1    7400 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L PCB_2020-rescue:+12V-power #P+?
-U 1 1 5F8C884E
-P 9450 6400
-AR Path="/5F8C884E" Ref="#P+?"  Part="1" 
-AR Path="/5DD5E236/5F8C884E" Ref="#P+?"  Part="1" 
-AR Path="/5DF27AC1/5F8C884E" Ref="#P+0102"  Part="1" 
-F 0 "#P+0102" H 9450 6400 50  0001 C CNN
-F 1 "+12V-power" H 9350 6550 59  0000 L BNN
-F 2 "" H 9450 6400 50  0001 C CNN
-F 3 "" H 9450 6400 50  0001 C CNN
-	1    9450 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L PCB_2020-rescue:GND-power #PWR0103
-U 1 1 5F8C6D64
-P 6200 6500
-F 0 "#PWR0103" H 6200 6250 50  0001 C CNN
-F 1 "GND-power" H 6205 6327 50  0000 C CNN
-F 2 "" H 6200 6500 50  0001 C CNN
-F 3 "" H 6200 6500 50  0001 C CNN
-	1    6200 6500
-	1    0    0    -1  
-$EndComp
-$Comp
 L PCB_2020-rescue:GND-power #PWR0105
 U 1 1 5F8D4125
 P 3350 2800
@@ -792,115 +756,14 @@ F 3 "" H 3350 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 2800 3350 2900
-$Comp
-L PCB_2020-rescue:+3V3-power #+3V?
-U 1 1 5F8E5553
-P 8550 5900
-AR Path="/5F8E5553" Ref="#+3V?"  Part="1" 
-AR Path="/5DD5E236/5F8E5553" Ref="#+3V?"  Part="1" 
-AR Path="/5DF27AC1/5F8E5553" Ref="#+3V0101"  Part="1" 
-F 0 "#+3V0101" H 8550 5900 50  0001 C CNN
-F 1 "+3V3-power" H 8400 6050 59  0000 L BNN
-F 2 "" H 8550 5900 50  0001 C CNN
-F 3 "" H 8550 5900 50  0001 C CNN
-	1    8550 5900
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6800 6200
-$Comp
-L PCB_2020-rescue:+3V3-power #+3V?
-U 1 1 5F8F3B6C
-P 5800 6100
-AR Path="/5F8F3B6C" Ref="#+3V?"  Part="1" 
-AR Path="/5DD5E236/5F8F3B6C" Ref="#+3V?"  Part="1" 
-AR Path="/5DF27AC1/5F8F3B6C" Ref="#+3V0102"  Part="1" 
-F 0 "#+3V0102" H 5800 6100 50  0001 C CNN
-F 1 "+3V3-power" H 5650 6250 59  0000 L BNN
-F 2 "" H 5800 6100 50  0001 C CNN
-F 3 "" H 5800 6100 50  0001 C CNN
-	1    5800 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 6100 8200 6100
-Wire Wire Line
-	8500 6100 8500 6200
-Wire Wire Line
-	8500 6200 8050 6200
-Wire Wire Line
-	8050 5900 8550 5900
-$Comp
-L PCB_2020-rescue:GND-power #PWR0104
-U 1 1 5F908D2F
-P 8700 6000
-F 0 "#PWR0104" H 8700 5750 50  0001 C CNN
-F 1 "GND-power" H 8705 5827 50  0000 C CNN
-F 2 "" H 8700 6000 50  0001 C CNN
-F 3 "" H 8700 6000 50  0001 C CNN
-	1    8700 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 6000 8700 6000
-Text Label 6800 6600 2    39   ~ 0
+Text Label 8900 6500 0    39   ~ 0
 Brake_Out_1
-Text Label 8050 6500 0    39   ~ 0
+Text Label 6900 6100 2    39   ~ 0
 Brake_Out_2
-$Comp
-L PCB_2020-rescue:GND-power #PWR0106
-U 1 1 5F913C37
-P 8200 6600
-F 0 "#PWR0106" H 8200 6350 50  0001 C CNN
-F 1 "GND-power" H 8205 6427 50  0000 C CNN
-F 2 "" H 8200 6600 50  0001 C CNN
-F 3 "" H 8200 6600 50  0001 C CNN
-	1    8200 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 6600 8200 6600
-Wire Wire Line
-	8050 6400 9250 6400
-$Comp
-L PCB_2020-rescue:C-Device C3
-U 1 1 5F91AB54
-P 9100 6300
-F 0 "C3" V 8848 6300 50  0000 C CNN
-F 1 "0.022uF" V 8939 6300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 9138 6150 50  0001 C CNN
-F 3 "" H 9100 6300 50  0001 C CNN
-	1    9100 6300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8050 6300 8950 6300
-Wire Wire Line
-	9250 6300 9250 6400
-Connection ~ 9250 6400
-Wire Wire Line
-	9250 6400 9450 6400
-Wire Wire Line
-	6200 6500 6550 6500
-Text GLabel 6800 5900 0    39   Input ~ 0
+Text GLabel 8900 5900 2    39   Input ~ 0
 Brake_PWM_1
-Wire Wire Line
-	5800 6100 6650 6100
-Text GLabel 6800 6000 0    39   Input ~ 0
+Text GLabel 8900 5800 2    39   Input ~ 0
 Brake_PWM_2
-Wire Wire Line
-	6650 6100 6650 6300
-Wire Wire Line
-	6650 6300 6800 6300
-Connection ~ 6650 6100
-Wire Wire Line
-	6650 6100 6800 6100
-Wire Wire Line
-	6800 6400 6550 6400
-Wire Wire Line
-	6550 6400 6550 6500
-Connection ~ 6550 6500
-Wire Wire Line
-	6550 6500 6800 6500
 $Comp
 L PCB_2020-rescue:R-Device R9
 U 1 1 5F93027B
@@ -964,14 +827,228 @@ F 4 "https://learn.adafruit.com/adafruit-drv8871-brushed-dc-motor-driver-breakou
 	1    0    0    -1  
 $EndComp
 $Comp
-L PCB_2020-rescue:C-Device C1
-U 1 1 5FB532D1
-P 8350 6100
-F 0 "C1" V 8098 6100 50  0000 C CNN
-F 1 "0.022 uF" V 8189 6100 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 8388 5950 50  0001 C CNN
-F 3 "" H 8350 6100 50  0001 C CNN
-	1    8350 6100
+L 2020-12-20_21-08-33:STK681-332-E U4
+U 1 1 5FE14AEF
+P 7100 5600
+F 0 "U4" H 8000 5987 60  0000 C CNN
+F 1 "STK681-332-E" H 8000 5881 60  0000 C CNN
+F 2 "SIP19_24P2X14P4_ONS" H 8000 5840 60  0001 C CNN
+F 3 "" H 7100 5600 60  0000 C CNN
+	1    7100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_2020-rescue:+5V-power #PWR?
+U 1 1 5FE253D5
+P 10100 5900
+F 0 "#PWR?" H 10100 5750 50  0001 C CNN
+F 1 "+5V-power" V 10115 6028 50  0000 L CNN
+F 2 "" H 10100 5900 50  0001 C CNN
+F 3 "" H 10100 5900 50  0001 C CNN
+	1    10100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5900 6900 5900
+Wire Wire Line
+	6900 5900 6900 6100
+Wire Wire Line
+	7100 6100 6900 6100
+Wire Wire Line
+	7100 6300 6500 6300
+Wire Wire Line
+	6500 6300 6500 6800
+Wire Wire Line
+	6500 6800 8900 6800
+Wire Wire Line
+	8900 6800 8900 6500
+NoConn ~ 8900 6200
+Wire Wire Line
+	7100 5600 6850 5600
+Wire Wire Line
+	6850 5600 6850 5700
+Wire Wire Line
+	6850 5800 7100 5800
+Wire Wire Line
+	7100 5700 6850 5700
+Connection ~ 6850 5700
+$Comp
+L PCB_2020-rescue:R-Device R?
+U 1 1 5FE58DCC
+P 6700 5700
+F 0 "R?" V 6493 5700 50  0000 C CNN
+F 1 "R-Device" V 6584 5700 50  0000 C CNN
+F 2 "" V 6630 5700 50  0001 C CNN
+F 3 "" H 6700 5700 50  0001 C CNN
+	1    6700 5700
 	0    1    1    0   
 $EndComp
+$Comp
+L PCB_2020-rescue:GND-power #PWR?
+U 1 1 5FE59F80
+P 6550 5700
+F 0 "#PWR?" H 6550 5450 50  0001 C CNN
+F 1 "GND-power" V 6555 5573 50  0000 R CNN
+F 2 "" H 6550 5700 50  0001 C CNN
+F 3 "" H 6550 5700 50  0001 C CNN
+	1    6550 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 6200 6400 6200
+Wire Wire Line
+	6400 6200 6400 6300
+Wire Wire Line
+	6400 6400 7100 6400
+$Comp
+L PCB_2020-rescue:+12V-power #PWR?
+U 1 1 5FEDA2E0
+P 6400 6300
+F 0 "#PWR?" H 6400 6150 50  0001 C CNN
+F 1 "+12V-power" V 6415 6427 50  0000 L CNN
+F 2 "" H 6400 6300 50  0001 C CNN
+F 3 "" H 6400 6300 50  0001 C CNN
+	1    6400 6300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6400 6300
+Wire Wire Line
+	6400 6300 6400 6400
+$Comp
+L PCB_2020-rescue:R-Device R?
+U 1 1 5FEDB4C0
+P 9200 5600
+F 0 "R?" V 8993 5600 50  0000 C CNN
+F 1 "1k" V 9084 5600 50  0000 C CNN
+F 2 "" V 9130 5600 50  0001 C CNN
+F 3 "" H 9200 5600 50  0001 C CNN
+	1    9200 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 5600 9050 5600
+$Comp
+L PCB_2020-rescue:R-Device R?
+U 1 1 5FEE1677
+P 8900 5250
+F 0 "R?" V 8693 5250 50  0000 C CNN
+F 1 "4k" V 8784 5250 50  0000 C CNN
+F 2 "" V 8830 5250 50  0001 C CNN
+F 3 "" H 8900 5250 50  0001 C CNN
+	1    8900 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 5400 8900 5500
+Connection ~ 8900 5600
+$Comp
+L PCB_2020-rescue:+5V-power #PWR?
+U 1 1 5FEE460E
+P 8900 5100
+F 0 "#PWR?" H 8900 4950 50  0001 C CNN
+F 1 "+5V-power" V 8915 5228 50  0000 L CNN
+F 2 "" H 8900 5100 50  0001 C CNN
+F 3 "" H 8900 5100 50  0001 C CNN
+	1    8900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_2020-rescue:GND-power #PWR?
+U 1 1 5FEE4E0D
+P 9350 5600
+F 0 "#PWR?" H 9350 5350 50  0001 C CNN
+F 1 "GND-power" V 9355 5472 50  0000 R CNN
+F 2 "" H 9350 5600 50  0001 C CNN
+F 3 "" H 9350 5600 50  0001 C CNN
+	1    9350 5600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8900 5700 2    50   Input ~ 0
+BrakeEnable
+$Comp
+L PCB_2020-rescue:C-Device C?
+U 1 1 5FFEE60A
+P 9800 6050
+F 0 "C?" H 9685 6004 50  0000 R CNN
+F 1 "10u" H 9685 6095 50  0000 R CNN
+F 2 "" H 9838 5900 50  0001 C CNN
+F 3 "" H 9800 6050 50  0001 C CNN
+	1    9800 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9400 5900 9400 6000
+Wire Wire Line
+	9400 6000 8900 6000
+Wire Wire Line
+	8900 6100 9400 6100
+Wire Wire Line
+	9400 6100 9400 6200
+Wire Wire Line
+	9400 5900 9800 5900
+$Comp
+L PCB_2020-rescue:GND-power #PWR?
+U 1 1 600136E0
+P 10100 6200
+F 0 "#PWR?" H 10100 5950 50  0001 C CNN
+F 1 "GND-power" V 10105 6073 50  0000 R CNN
+F 2 "" H 10100 6200 50  0001 C CNN
+F 3 "" H 10100 6200 50  0001 C CNN
+	1    10100 6200
+	1    0    0    -1  
+$EndComp
+Connection ~ 9800 5900
+Wire Wire Line
+	9800 5900 10100 5900
+Wire Wire Line
+	9400 6200 9800 6200
+Connection ~ 9800 6200
+Wire Wire Line
+	9800 6200 10100 6200
+$Comp
+L PCB_2020-rescue:C-Device C?
+U 1 1 60019F7B
+P 6400 5950
+F 0 "C?" H 6285 5904 50  0000 R CNN
+F 1 "47u" H 6285 5995 50  0000 R CNN
+F 2 "" H 6438 5800 50  0001 C CNN
+F 3 "" H 6400 5950 50  0001 C CNN
+	1    6400 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 5800 6850 5800
+Connection ~ 6850 5800
+Wire Wire Line
+	6400 6100 6400 6200
+Connection ~ 6400 6200
+$Comp
+L PCB_2020-rescue:C-Device C?
+U 1 1 60020FA0
+P 8000 5050
+F 0 "C?" V 8252 5050 50  0000 C CNN
+F 1 "0.1u" V 8161 5050 50  0000 C CNN
+F 2 "" H 8038 4900 50  0001 C CNN
+F 3 "" H 8000 5050 50  0001 C CNN
+	1    8000 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 5500 8650 5500
+Wire Wire Line
+	8650 5500 8650 5050
+Wire Wire Line
+	8650 5050 8150 5050
+Wire Wire Line
+	7100 5050 7100 5600
+Wire Wire Line
+	6850 5750 6850 5800
+Wire Wire Line
+	6850 5700 6850 5800
+Connection ~ 8900 5500
+Wire Wire Line
+	8900 5500 8900 5600
+Connection ~ 7100 5600
+Wire Wire Line
+	7850 5050 7100 5050
 $EndSCHEMATC
