@@ -11,8 +11,8 @@
 
   (page A4)
   (layers
-    (0 Top signal)
-    (31 Bottom signal)
+    (0 Top signal hide)
+    (31 Bottom signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -685,6 +685,11 @@
       (net 27 "Net-(U1-Pad85)"))
     (pad 86 thru_hole circle (at -24.3764 -46.9029) (size 1.6764 1.6764) (drill 0.95) (layers *.Cu *.Mask)
       (net 141 "Net-(U1-Pad86)"))
+    (model "${KIPRJMOD}/Resources/3D Models/DUE_V02g v1.step"
+      (offset (xyz 26.5 65.5 7))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 90))
+    )
   )
 
   (module Connector_Molex:Molex_Mini-Fit_Jr_5566-10A2_2x05_P4.20mm_Vertical (layer Top) (tedit 5B781992) (tstamp 601FAFE9)
@@ -818,6 +823,16 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "D:/MOLEX models/39281103.dwg"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "D:/MOLEX models/39281103.stp"
+      (offset (xyz 8.5 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
     )
   )
 
@@ -1931,12 +1946,12 @@
       (net 1 GND))
     (pad 1 thru_hole circle (at 0 0) (size 1.27 1.27) (drill 0.762) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${LOCAL}/3D/STK681-332-E.wrl
+    (model ${LOCAL}/3D/STK681-332-E.stp
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${LOCAL}/3D/STK681-332-E.stp
+    (model "${KIPRJMOD}/Resources/3D Models/STK681-332-E.stp"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2091,6 +2106,11 @@
       (net 120 "Net-(U3-Pad2)"))
     (pad 1 thru_hole rect (at -7.62 15.24) (size 1.2954 1.2954) (drill 0.7874) (layers *.Cu *.Mask)
       (net 22 FS1_CTL))
+    (model ${KISYS3DMOD}/Package_DIP.3dshapes/DIP-14_W7.62mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
   )
 
   (module Connector_Molex:Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical (layer Top) (tedit 5B781992) (tstamp 5FFFFBDC)
@@ -2146,10 +2166,10 @@
       (net 15 "/LAUNCHXL-F28379D Breakout/Brake_Out_1"))
     (pad 1 thru_hole roundrect (at 0 0) (size 2.7 3.3) (drill 1.4) (layers *.Cu *.Mask) (roundrect_rratio 0.09259299999999999)
       (net 14 "/LAUNCHXL-F28379D Breakout/Brake_Out_2"))
-    (model ${KISYS3DMOD}/Connector_Molex.3dshapes/Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical.wrl
-      (at (xyz 0 0 0))
+    (model "${KIPRJMOD}/Resources/3D Models/Molex_Mini_Fit_Jr_1x2.stp"
+      (offset (xyz 0 -3 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -2399,6 +2419,11 @@
     (pad 3 thru_hole circle (at -7.62 10.16) (size 1.2954 1.2954) (drill 0.7874) (layers *.Cu *.Mask))
     (pad 2 thru_hole circle (at -7.62 12.7) (size 1.2954 1.2954) (drill 0.7874) (layers *.Cu *.Mask))
     (pad 1 thru_hole rect (at -7.62 15.24) (size 1.2954 1.2954) (drill 0.7874) (layers *.Cu *.Mask))
+    (model ${KISYS3DMOD}/Package_DIP.3dshapes/DIP-14_W7.62mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
   )
 
   (module Drivetrain_control:LoRa (layer Bottom) (tedit 5FA84FFA) (tstamp 5FAAC6A8)
@@ -2477,6 +2502,11 @@
       (net 107 "Net-(U4-Pad31)"))
     (pad 57 thru_hole circle (at -8.89 10.16 90) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
       (net 108 "Net-(U4-Pad57)"))
+    (model "${KIPRJMOD}/Resources/3D Models/Feather v1.iges"
+      (offset (xyz -25.5 -11.5 2))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 0))
+    )
   )
 
   (module Package_TO_SOT_THT:TO-220-3_Vertical (layer Top) (tedit 5AC8BA0D) (tstamp 5FAAA9A3)
