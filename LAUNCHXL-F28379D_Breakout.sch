@@ -892,8 +892,6 @@ F 3 "" H 9350 5600 50  0001 C CNN
 	1    9350 5600
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8900 5700 2    50   Input ~ 0
-BrakeEnable
 $Comp
 L PCB_2020-rescue:C-Device C4
 U 1 1 5FFEE60A
@@ -984,4 +982,17 @@ Text GLabel 10800 3200 3    50   Input ~ 0
 FS1_RMT
 NoConn ~ 8900 6300
 NoConn ~ 8900 6400
+$Comp
+L PCB_2020-rescue:+5V-power #PWR?
+U 1 1 61745E44
+P 9000 5700
+F 0 "#PWR?" H 9000 5550 50  0001 C CNN
+F 1 "+5V-power" V 9015 5828 50  0000 L CNN
+F 2 "" H 9000 5700 50  0001 C CNN
+F 3 "" H 9000 5700 50  0001 C CNN
+	1    9000 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5700 9000 5700
 $EndSCHEMATC
