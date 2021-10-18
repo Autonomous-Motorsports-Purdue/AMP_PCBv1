@@ -535,46 +535,6 @@ F 3 "https://www.infineon.com/dgdl/irl530npbf.pdf?fileId=5546d462533600a40153565
 	1    11000 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 7350 2    39   Input ~ 0
-Brake_PWM_2
-Text GLabel 1650 7250 2    39   Input ~ 0
-Brake_PWM_1
-$Comp
-L PCB_2020-rescue:GND-power #GND?
-U 1 1 5E188E1D
-P 2300 7600
-AR Path="/5E188E1D" Ref="#GND?"  Part="1" 
-AR Path="/5DD5E236/5E188E1D" Ref="#GND?"  Part="1" 
-AR Path="/5DF27AC1/5E188E1D" Ref="#GND0101"  Part="1" 
-F 0 "#GND0101" H 2300 7600 50  0001 C CNN
-F 1 "GND-power" H 2200 7400 59  0000 L BNN
-F 2 "" H 2300 7600 50  0001 C CNN
-F 3 "" H 2300 7600 50  0001 C CNN
-	1    2300 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L PCB_2020-rescue:+12V-power #P+?
-U 1 1 5E189D98
-P 2300 7400
-AR Path="/5E189D98" Ref="#P+?"  Part="1" 
-AR Path="/5DD5E236/5E189D98" Ref="#P+?"  Part="1" 
-AR Path="/5DF27AC1/5E189D98" Ref="#P+0101"  Part="1" 
-F 0 "#P+0101" H 2300 7400 50  0001 C CNN
-F 1 "+12V-power" H 2200 7550 59  0000 L BNN
-F 2 "" H 2300 7400 50  0001 C CNN
-F 3 "" H 2300 7400 50  0001 C CNN
-	1    2300 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 7450 2300 7450
-Wire Wire Line
-	2300 7450 2300 7400
-Wire Wire Line
-	1650 7550 2300 7550
-Wire Wire Line
-	2300 7550 2300 7600
 $Comp
 L PCB_2020-rescue:Conn_01x02_Male-Connector CONN7
 U 1 1 5E1945B9
@@ -600,14 +560,8 @@ Wire Wire Line
 	2400 1800 2650 1800
 Text Label 3400 7400 2    39   ~ 0
 Brake_Out_1
-Text Label 1650 7650 0    39   ~ 0
-Brake_Out_1
 Text Label 3400 7500 2    39   ~ 0
 Brake_Out_2
-Text Label 1650 7750 0    39   ~ 0
-Brake_Out_2
-Text Notes 1200 8200 0    50   ~ 0
-NOTE: This Brake Conn is itself a\npass through from PWM input to output\n
 $Comp
 L PCB_2020-rescue:Q_NMOS_GDS-Device Q?
 U 1 1 5E250E23
@@ -812,18 +766,6 @@ F 3 "" H 2150 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 3950 2650 3950
-$Comp
-L PCB_2020-rescue:Conn_01x06_Male-Connector CONN6
-U 1 1 5E187579
-P 1450 7450
-F 0 "CONN6" H 1558 7831 50  0000 C CNN
-F 1 "Brake_MC_CONN" H 1558 7740 50  0000 C CNN
-F 2 "Drivetrain_control:Brake_MC_Conn_6_pin" H 1450 7450 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/product-files/3190/drv8871.pdf" H 1450 7450 50  0001 C CNN
-F 4 "https://learn.adafruit.com/adafruit-drv8871-brushed-dc-motor-driver-breakout/" H 1450 7450 50  0001 C CNN "Website"
-	1    1450 7450
-	1    0    0    -1  
-$EndComp
 $Comp
 L 2020-12-20_21-08-33:STK681-332-E U5
 U 1 1 5FE14AEF
@@ -1040,4 +982,6 @@ Wire Wire Line
 	6850 5700 6550 5700
 Text GLabel 10800 3200 3    50   Input ~ 0
 FS1_RMT
+NoConn ~ 8900 6300
+NoConn ~ 8900 6400
 $EndSCHEMATC
