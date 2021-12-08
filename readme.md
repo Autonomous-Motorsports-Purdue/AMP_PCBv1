@@ -28,4 +28,7 @@ PCB Documentation
 		- Speed of 1.38 in/s with load of 35 lbs
 		
 	
-		- 
+		Changes
+			-C1, C3, C4 backwards footprints (non-polarized capacitors
+			-Resistor footprints larger
+			-
