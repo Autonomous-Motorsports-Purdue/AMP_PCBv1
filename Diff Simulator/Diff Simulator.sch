@@ -1,0 +1,242 @@
+EESchema Schematic File Version 4
+LIBS:Diff Simulator-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0105
+U 1 1 5F715225
+P 4700 4350
+F 0 "#PWR0105" H 4700 4100 50  0001 C CNN
+F 1 "GND" H 4705 4177 50  0000 C CNN
+F 2 "" H 4700 4350 50  0001 C CNN
+F 3 "" H 4700 4350 50  0001 C CNN
+F 4 "I" H 4700 4350 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0" H 4700 4350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4700 4350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F716D8C
+P 5100 2750
+F 0 "R3" V 4893 2750 50  0000 C CNN
+F 1 "2000" V 4984 2750 50  0000 C CNN
+F 2 "" V 5030 2750 50  0001 C CNN
+F 3 "~" H 5100 2750 50  0001 C CNN
+F 4 "R" H 5100 2750 50  0001 C CNN "Spice_Primitive"
+F 5 "2000" H 5100 2750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5100 2750 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5100 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F717847
+P 4500 3600
+F 0 "R2" V 4293 3600 50  0000 C CNN
+F 1 "1000" V 4384 3600 50  0000 C CNN
+F 2 "" V 4430 3600 50  0001 C CNN
+F 3 "~" H 4500 3600 50  0001 C CNN
+	1    4500 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F717B95
+P 4550 3100
+F 0 "R1" V 4343 3100 50  0000 C CNN
+F 1 "1000" V 4434 3100 50  0000 C CNN
+F 2 "" V 4480 3100 50  0001 C CNN
+F 3 "~" H 4550 3100 50  0001 C CNN
+	1    4550 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F717E7F
+P 4700 4150
+F 0 "R4" H 4770 4196 50  0000 L CNN
+F 1 "2000" H 4770 4105 50  0000 L CNN
+F 2 "" V 4630 4150 50  0001 C CNN
+F 3 "~" H 4700 4150 50  0001 C CNN
+F 4 "R" H 4700 4150 50  0001 C CNN "Spice_Primitive"
+F 5 "2000" H 4700 4150 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4700 4150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3600 4350 3600
+Wire Wire Line
+	4700 3100 4900 3100
+Wire Wire Line
+	4900 3350 4950 3350
+Wire Wire Line
+	4400 3100 4100 3100
+Text GLabel 4100 3600 0    50   Input ~ 0
+V1
+Text GLabel 5950 3450 2    50   Input ~ 0
+Vout
+$Comp
+L pspice:VSOURCE V3
+U 1 1 5F726361
+P 1850 1600
+F 0 "V3" H 2078 1646 50  0000 L CNN
+F 1 "13" H 2078 1555 50  0000 L CNN
+F 2 "" H 1850 1600 50  0001 C CNN
+F 3 "~" H 1850 1600 50  0001 C CNN
+F 4 "V" H 1850 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 13" H 1850 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1850 1600 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1850 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1300 1850 1100
+Wire Wire Line
+	1850 2100 1850 1900
+Text GLabel 1850 1100 1    50   Input ~ 0
+VCC
+Text GLabel 5150 3750 3    50   Input ~ 0
+VCC
+$Comp
+L power:GND #PWR02
+U 1 1 5F727D6E
+P 1850 2100
+F 0 "#PWR02" H 1850 1850 50  0001 C CNN
+F 1 "GND" H 1855 1927 50  0000 C CNN
+F 2 "" H 1850 2100 50  0001 C CNN
+F 3 "" H 1850 2100 50  0001 C CNN
+	1    1850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5F728EEC
+P 3700 1600
+F 0 "V1" H 3928 1646 50  0000 L CNN
+F 1 "0.55" H 3928 1555 50  0000 L CNN
+F 2 "" H 3700 1600 50  0001 C CNN
+F 3 "~" H 3700 1600 50  0001 C CNN
+F 4 "V" H 3700 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "sin(0 1 2k)" H 3700 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3700 1600 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1000 3700 1300
+Wire Wire Line
+	3700 1900 3700 2300
+$Comp
+L power:GND #PWR04
+U 1 1 5F72A626
+P 3700 2300
+F 0 "#PWR04" H 3700 2050 50  0001 C CNN
+F 1 "GND" H 3705 2127 50  0000 C CNN
+F 2 "" H 3700 2300 50  0001 C CNN
+F 3 "" H 3700 2300 50  0001 C CNN
+	1    3700 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 1000 1    50   Input ~ 0
+V1
+Text Notes 5650 2200 2    50   ~ 0
+.tran 1u 1m
+Text GLabel 5150 3150 1    50   Input ~ 0
+VEE
+$Comp
+L pspice:VSOURCE V4
+U 1 1 5F72E756
+P 1000 1650
+F 0 "V4" H 1228 1696 50  0000 L CNN
+F 1 "-13" H 1228 1605 50  0000 L CNN
+F 2 "" H 1000 1650 50  0001 C CNN
+F 3 "~" H 1000 1650 50  0001 C CNN
+F 4 "V" H 1000 1650 50  0001 C CNN "Spice_Primitive"
+F 5 "dc -13" H 1000 1650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1000 1650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1000 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 1350 1    50   Input ~ 0
+VEE
+$Comp
+L power:GND #PWR01
+U 1 1 5F72F2E6
+P 1000 1950
+F 0 "#PWR01" H 1000 1700 50  0001 C CNN
+F 1 "GND" H 1005 1777 50  0000 C CNN
+F 2 "" H 1000 1950 50  0001 C CNN
+F 3 "" H 1000 1950 50  0001 C CNN
+	1    1000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3350 4900 3100
+Wire Wire Line
+	4900 3100 4900 2750
+Wire Wire Line
+	4900 2750 4950 2750
+Connection ~ 4900 3100
+Wire Wire Line
+	5250 2750 5750 2750
+Wire Wire Line
+	5750 2750 5750 3450
+Connection ~ 5750 3450
+Wire Wire Line
+	5750 3450 5950 3450
+Wire Wire Line
+	4700 4300 4700 4350
+Wire Wire Line
+	4650 3600 4700 3600
+Wire Wire Line
+	4950 3600 4950 3550
+Wire Wire Line
+	4700 3600 4700 4000
+Connection ~ 4700 3600
+Wire Wire Line
+	4700 3600 4950 3600
+$Comp
+L power:GND #PWR03
+U 1 1 5F826BC0
+P 4100 3100
+F 0 "#PWR03" H 4100 2850 50  0001 C CNN
+F 1 "GND" H 4105 2927 50  0000 C CNN
+F 2 "" H 4100 3100 50  0001 C CNN
+F 3 "" H 4100 3100 50  0001 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3450 5750 3450
+$Comp
+L Amplifier_Difference:AD8276 U1
+U 1 1 5F82850A
+P 5250 3450
+F 0 "U1" H 5594 3404 50  0000 L CNN
+F 1 "AD8276" H 5594 3495 50  0000 L CNN
+F 2 "" H 5250 3450 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8276_8277.pdf" H 5250 3450 50  0001 C CNN
+F 4 "X" H 5250 3450 50  0001 C CNN "Spice_Primitive"
+F 5 "AD8276" H 5250 3450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5250 3450 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "ad8276.cir" H 5250 3450 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 2 7 4 6 1 5" H 5250 3450 50  0001 C CNN "Spice_Node_Sequence"
+	1    5250 3450
+	1    0    0    1   
+$EndComp
+$EndSCHEMATC

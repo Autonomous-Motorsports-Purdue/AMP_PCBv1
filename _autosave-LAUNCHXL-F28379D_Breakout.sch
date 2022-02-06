@@ -292,7 +292,7 @@ AR Path="/5DD5E236/7CA1BA3F" Ref="JETSON_CONN_PWR"  Part="1"
 AR Path="/5DF27AC1/7CA1BA3F" Ref="CONN4"  Part="1" 
 F 0 "CONN4" H 10250 1450 51  0000 L BNN
 F 1 "JETSON_CONN_PWR" H 9600 1600 59  0000 L BNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 10500 1600 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Nano-Fit_105309-xx03_1x03_P2.50mm_Vertical" H 10500 1600 50  0001 C CNN
 F 3 "https://www.molex.com/molex/products/datasheet.jsp?part=active/0022272031_PCB_HEADERS.xml" H 10500 1600 50  0001 C CNN
 	1    10500 1600
 	-1   0    0    1   
@@ -428,7 +428,7 @@ U 1 1 5E01BD9E
 P 11150 4550
 F 0 "CONN5" H 11122 4432 50  0000 R CNN
 F 1 "MC_CONN" H 11122 4523 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 11150 4550 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-04A2_2x02_P4.20mm_Vertical" H 11150 4550 50  0001 C CNN
 F 3 "https://www.molex.com/molex/products/datasheet.jsp?part=active/0022272041_PCB_HEADERS.xml" H 11150 4550 50  0001 C CNN
 	1    11150 4550
 	-1   0    0    1   
@@ -983,10 +983,10 @@ FS1_RMT
 NoConn ~ 8900 6300
 NoConn ~ 8900 6400
 $Comp
-L PCB_2020-rescue:+5V-power #PWR?
+L PCB_2020-rescue:+5V-power #PWR0116
 U 1 1 61745E44
 P 9000 5700
-F 0 "#PWR?" H 9000 5550 50  0001 C CNN
+F 0 "#PWR0116" H 9000 5550 50  0001 C CNN
 F 1 "+5V-power" V 9015 5828 50  0000 L CNN
 F 2 "" H 9000 5700 50  0001 C CNN
 F 3 "" H 9000 5700 50  0001 C CNN
